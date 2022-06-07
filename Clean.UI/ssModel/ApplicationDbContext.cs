@@ -58,6 +58,7 @@ namespace Clean.UI.ssModel
         public virtual DbSet<EmaraZoneType> EmaraZoneType { get; set; }
         public virtual DbSet<EmployeeContractTypes> EmployeeContractTypes { get; set; }
         public virtual DbSet<Ethnicity> Ethnicity { get; set; }
+        public virtual DbSet<EvCreteria> EvCreteria { get; set; }
         public virtual DbSet<Evcategory> Evcategory { get; set; }
         public virtual DbSet<EventReason> EventReason { get; set; }
         public virtual DbSet<Evzone> Evzone { get; set; }
@@ -1145,6 +1146,22 @@ namespace Clean.UI.ssModel
                 entity.Property(e => e.ParentId).HasColumnName("ParentID");
             });
 
+            modelBuilder.Entity<EvCreteria>(entity =>
+            {
+                entity.ToTable("EvCreteria", "NE");
+
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.EvZoneTypeId).HasColumnName("EvZoneTypeID");
+
+                entity.Property(e => e.Name).HasColumnType("character varying");
+
+                entity.HasOne(d => d.EvZoneType)
+                    .WithMany(p => p.EvCreteria)
+                    .HasForeignKey(d => d.EvZoneTypeId)
+                    .HasConstraintName("ٍٰEvZoneType_ID_FK");
+            });
+
             modelBuilder.Entity<Evcategory>(entity =>
             {
                 entity.ToTable("EVCategory", "NE");
@@ -2060,11 +2077,11 @@ namespace Clean.UI.ssModel
                 entity.HasIndex(e => e.Evid)
                     .HasName("fki_FK_record_category");
 
-                entity.HasIndex(e => e.MarkId)
-                    .HasName("fki_FK_NER_Marks");
-
                 entity.HasIndex(e => e.Nid)
                     .HasName("fki_FK_NER_Nazim");
+
+                entity.HasIndex(e => e.ResultId)
+                    .HasName("fki_FK_NER_Marks");
 
                 entity.HasIndex(e => e.ZoneId)
                     .HasName("fki_FK_record_Zone");
@@ -2073,9 +2090,9 @@ namespace Clean.UI.ssModel
 
                 entity.Property(e => e.CreatedOn).HasColumnName("CreatedON");
 
-                entity.Property(e => e.Evid).HasColumnName("EVID");
+                entity.Property(e => e.EvCreteriaId).HasColumnName("EvCreteriaID");
 
-                entity.Property(e => e.MarkId).HasColumnName("MarkID");
+                entity.Property(e => e.Evid).HasColumnName("EVID");
 
                 entity.Property(e => e.ModifiedBy).HasColumnType("character varying");
 
@@ -2083,22 +2100,29 @@ namespace Clean.UI.ssModel
 
                 entity.Property(e => e.Nid).HasColumnName("NID");
 
+                entity.Property(e => e.ResultId).HasColumnName("ResultID");
+
                 entity.Property(e => e.ZoneId).HasColumnName("ZoneID");
+
+                entity.HasOne(d => d.EvCreteria)
+                    .WithMany(p => p.Nerecords)
+                    .HasForeignKey(d => d.EvCreteriaId)
+                    .HasConstraintName("FK_EvCreteriaID");
 
                 entity.HasOne(d => d.Ev)
                     .WithMany(p => p.Nerecords)
                     .HasForeignKey(d => d.Evid)
                     .HasConstraintName("FK_record_category");
 
-                entity.HasOne(d => d.Mark)
-                    .WithMany(p => p.Nerecords)
-                    .HasForeignKey(d => d.MarkId)
-                    .HasConstraintName("FK_NER_Marks");
-
                 entity.HasOne(d => d.N)
                     .WithMany(p => p.Nerecords)
                     .HasForeignKey(d => d.Nid)
                     .HasConstraintName("FK_NER_Nazim");
+
+                entity.HasOne(d => d.Result)
+                    .WithMany(p => p.Nerecords)
+                    .HasForeignKey(d => d.ResultId)
+                    .HasConstraintName("FK_NER_Result");
 
                 entity.HasOne(d => d.Zone)
                     .WithMany(p => p.Nerecords)

@@ -13,7 +13,7 @@ namespace App.Application.Nazim.Models
         public string result { get; set; }
         public string category { get; set; }
         public int? Evid { get; set; }
-        public int? MarkId { get; set; }
+        public int? ResultId { get; set; }
         public int? ZoneId { get; set; }
 
     }

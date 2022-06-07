@@ -16,7 +16,7 @@ namespace App.Application.Nazim.Command
         public int Id { get; set; }
         public int? Nid { get; set; }
         public int? Evid { get; set; }
-        public int? MarkId { get; set; }
+        public int? ResultId { get; set; }
         public int? ZoneId { get; set; }
     }
     public class CreateEvaluationCommandHandler : IRequestHandler<CreateEvaluationCommand, List<EvcategoryModel>>
@@ -43,7 +43,7 @@ namespace App.Application.Nazim.Command
             ed.Id = request.Id;
             ed.Evid = request.Evid;
             ed.Nid = request.Nid;
-            ed.MarkId = request.MarkId;
+            ed.ResultId = request.ResultId;
             ed.ZoneId = request.ZoneId;
             if (request.Id == 0)
             {

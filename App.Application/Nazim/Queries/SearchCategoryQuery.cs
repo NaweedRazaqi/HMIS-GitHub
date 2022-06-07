@@ -46,8 +46,8 @@ namespace App.Application.Nazim.Queries
                 category=p.Ev.Name,
                 zone=p.Zone.Name,
                 Nid = p.Nid,
-                MarkId = p.MarkId,
-                result=p.Mark.Name,
+                ResultId = p.ResultId,
+                result=p.Result.Name,
                 ZoneId=p.ZoneId
         }).ToListAsync();
         }
