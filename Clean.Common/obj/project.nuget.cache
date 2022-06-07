@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "uhsItdVFAgjKqWpBaSFOCFPAUphgLIUBCg2dnZLzEfRgbrPAIrAQPTAB6ZuqyYfFWzXzvIRIXJbmk3s8EbRXMw==",
+  "success": true,
+  "projectFilePath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Common\\Clean.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.2\\fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\mediatr\\8.0.0\\mediatr.8.0.0.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.ej2.aspnet.core\\19.1.0.58\\syncfusion.ej2.aspnet.core.19.1.0.58.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.licensing\\19.1.0.58\\syncfusion.licensing.19.1.0.58.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

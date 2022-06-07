@@ -1,0 +1,99 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Nazam.ExamScore.ExamScoreModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Score";
+    Layout = null;
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">نمرات</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Nazam_ExamScore_ExamScore" class="form sub-form page-component" parent="dv_Nazam_Nazim" type="form" prefix="ux"parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">نمرات را وارد کنید </legend>
+                <input type="hidden" id="uxbid" />
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        نمره تقریری
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input id="uxoralexamscore" name="uxOralExamScore" type="number" class="form-control" required />
+                                    <div class="form-control-feedback">
+                                        <i class="icon-search4 text-size-base"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        نمره تحریری
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input id="uxwrittenexamscore" name="uxWrittenExamScore" type="number" class="form-control" required />
+                                    <div class="form-control-feedback">
+                                        <i class="icon-search4 text-size-base"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        مجموعه نمرات گرفته شده
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input id="uxtotalmarks" name="uxTotalMarks" type="number" class="form-control" disabled/>
+                                    <div class="form-control-feedback">
+                                        <i class="icon-search4 text-size-base"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group">
+                                    <label class="text-bold">
+                                        نتیجه
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <select id="uxexamresultid" name="uxExamResultID" class="select" asp-items="@Model.ListOfExamResult" disabled>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i> ثبت معلومات </button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="NazamName"> نام ناظم  </th>
+                            <th colname="TotalMarks"> مجموعه نمرات گرفته شده </th>
+                            <th colname="ExamResultName"> نتیجه امتحان </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

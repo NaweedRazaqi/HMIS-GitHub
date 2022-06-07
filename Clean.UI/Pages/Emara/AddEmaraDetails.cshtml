@@ -1,0 +1,140 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Emara.AddEmaraDetailsModel
+@{
+
+    ViewData["Title"] = "Emara Details";
+
+}
+
+<div class="panel panel-flat" style="direction:rtl;">
+@Html.AntiForgeryToken()
+<div class="panel-heading">
+    <h1 class="panel-title"> ثبت معلومات اعماره </h1>
+</div>
+<div class="panel-body" style="padding-bottom:5px;">
+    <form id="dv_Emara_AddEmaraDetails" class="form main-form page-component" type="form" prefix="ux">
+        <fieldset class="content-group">
+            <legend class="text-bold">مشخصات اعماره را وارد کنید </legend>
+           @*//<input type="hidden" id="uxbid" />*@
+        <div class="row">
+
+            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                <div class="form-group has-feedback has-feedback-left">
+                    <label class="text-bold">
+                        اسم اعماره
+
+                    </label>
+                    <input id="uxname" name="uxName" type="text" class="form-control search" required />
+                    <div class="form-control-feedback">
+                        <i class="icon-search4 text-size-base"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                <div class="form-group has-feedback has-feedback-left">
+                    <label class="text-bold">
+                        سال
+                        <span class="text-danger">&nbsp;*</span>
+                    </label>
+                    <select id="uxyearid" name="uxYearID" class="select search" asp-items="@Model.ListOfPersianYears" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                <div class="form-group has-feedback has-feedback-left">
+                    <label class="text-bold">
+                        ظرفیت اعماره
+                    </label>
+                    <input id="uxcapacity" name="uxCapacity" type="number" class="form-control search" />
+                    <div class="form-control-feedback">
+                        <i class="icon-search4 text-size-base"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                <div class="form-group has-feedback has-feedback-left">
+                    <label class="text-bold">
+                        آدرس مکمل
+
+                    </label>
+                    <input id="uxfulladdress" name="uxFullAddress" type="text" class="form-control" />
+                    <div class="form-control-feedback">
+                        <i class="icon-search4 text-size-base"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12 ">
+                    <div class="form-group has-feedback has-feedback-left">
+                        <label class="text-bold">
+                            موقعیت اعماره
+
+                        </label>
+                        <select id="uxlocationid" name="uxLocationId" class="select search" asp-items="@Model.ListOfLocations" required>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 ">
+                    <div class="form-group has-feedback has-feedback-left">
+                        <label class="text-bold">
+                            نوع اعماره
+                            <span class="text-danger">&nbsp;*</span>
+                        </label>
+                        <select id="uxemaratype" name="uxEmaraType" class="select search" asp-items="@Model.ListEmaraType" required>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 ">
+                    <div class="form-group has-feedback has-feedback-left">
+                        <label class="text-bold">
+                            زون اعماره
+                            <span class="text-danger">&nbsp;*</span>
+                        </label>
+                        <select id="uxemarazone" name="uxEmaraZone" class="select search" asp-items="@Model.ListEmaraZoneType" required>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </fieldset>
+        <hr />
+        <div class="row div-form-control main-form-details">
+            <div class="col-md-12">
+                <div class="form-group actions">
+                    <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i> ثبت معلومات </button>
+                    <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                    <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                </div>
+            </div>
+        </div>
+        <div class="form-grid main-form-details">
+            <table bindonclick="true">
+                <thead>
+                    <tr>
+                        <th colname="YearName"> سال </th>
+                        <th colname="Name"> نام اعماره </th>
+                        <th colname="EmaraTypeName">نوع اعماره</th>
+                        <th colname="EmaraZoneName">زون اعماره</th>
+                        <th colname="LocationName">موقعیت اعماره</th>
+                        <th colname="FullAddress"> آدرس مکمل</th>
+                        <th colname="Capacity">ظرفیت اعماره</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </form>
+</div>
+</div>

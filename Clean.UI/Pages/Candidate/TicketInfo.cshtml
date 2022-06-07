@@ -1,0 +1,170 @@
+﻿@page "{handler?}/{id?}"
+
+@model Clean.UI.Pages.Candidate.TicketInfoModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "TicketInfo";
+    Layout = null;
+}
+
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">مشخصات تکت</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+
+        <form id="dv_Candidate_TicketInfo" class="form sub-form page-component" type="form" prefix="uxi" parent="dv_Profile_Profile" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً مشخصات تکت حاجی یا ناظم را وارد نمایید</legend>
+                <div class="row">
+                   
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ ورود
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxiarrivaldate1" name="uxiArrivalDate1" class="form-control Shamsi" sibling="uxiarrivaldate" placeholder="تارخ ورود به شمسی " required />
+                                <input type="hidden" id="uxiarrivaldate" name="uxiArrivalDate" class="form-control Miladi" sibling="uxiarrivaldate1" placeholder="تارخ تولد شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                موقعیت ورود
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxiarrivalprovincesid" name="uxiArrivalProvincesID" class="select" asp-items="@Model.ListOfLocations" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ خروج
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxideparturedate1" name="uxiDepartureDate1" class="form-control Shamsi" sibling="uxideparturedate" placeholder="تارخ خروج به شمسی " required />
+                                <input type="hidden" id="uxideparturedate" name="uxiDepartureDate" class="form-control Miladi" sibling="uxideparturedate1" placeholder="تارخ تولد شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                موقعیت خروج
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxidepartureprovincesid" name="uxiDepartureProvincesID" class="select" asp-items="@Model.ListOfLocations" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                شرکت هوایی
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxiairlineid" name="uxiAirLineID" class="select" asp-items="@Model.ListOfAirLine" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر پرواز
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxiflightno" name="uxiFlightNo" type="number" lang="en" class="form-control search" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر تکت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxiticketno" name="uxiTicketNo" type="number" lang="en" class="form-control search" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                فیصدی قیمت تکت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxiticketcommission" name="uxiTicketCommission" type="number" lang="en" class="form-control search" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                سال
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxiyearid" name="uxiYearID" class="select" asp-items="@Model.ListOfPersianYears" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table style="direction: rtl;" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="YearName">سال</th>
+                            <th colname="AirLineName">شرکت هوایی</th>
+                            <th colname="ArrivalDateShamsi">تاریخ ورود</th>
+                            <th colname="DepartureDateShamsi">تاریخ خروج</th>
+                            <th colname="FlightNo">نمبر پرواز</th>
+                            <th colname="TicketNo">نمبر تکت</th>
+                            <th colname="TicketCommission">فیصدی قیمت تکت</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+
+    </div>
+</div>
+

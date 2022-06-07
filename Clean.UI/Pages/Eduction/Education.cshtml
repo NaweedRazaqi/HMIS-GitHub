@@ -1,0 +1,137 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Eduction.EducationModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Education";
+    Layout = null;
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">تحصیلات</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+
+        <form id="dv_Eduction_Education" class="form sub-form page-component" type="form" prefix="uxs" parent="dv_Nazam_Nazim" parentcol="CandidateId">
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً تحصیلات خویش را ثبت نمائید</legend>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["پوهنتون/دانشگاه"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsuniversityid" name="uxsUniversityId" class="select " asp-items="@Model.ListOfUniversities" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["کشور"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxscountryid" name="uxsCountryid" class="select search" asp-items="@Model.ListOfLocations" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>   
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["نوع تحصیل"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsstudytypeid" name="uxsStudyTypeId" class="select"  required>
+                                <option value="1">دولتی</option>
+                                <option value="2">شخصی</option>
+                                <option value="3">مدارس دینی</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["درجه تحصیل"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsdegreeid" name="uxsDegreeid" class="select" asp-items="@Model.ListOfEducationDegree" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["رشته تحصیلی"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsfieldofstudyid" name="uxsFieldofstudyid" class="select" asp-items="@Model.ListOfStudyField" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["تاریخ شروع "]
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <input type="text" id="uxsstartdate1" name="uxsstartdate" class="form-control Shamsi" sibling="uxsstartdate" />
+                                <input type="hidden" id="uxsstartdate" name="uxsStartDate" class="form-control Miladi" sibling="uxsstartdate1" />
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["تاریخ ختم "]
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <input type="text" id="uxsenddate1" name="uxsenddate" class="form-control Shamsi" sibling="uxsenddate" />
+                                <input type="hidden" id="uxsenddate" name="uxsEndDate" class="form-control Miladi" sibling="uxsenddate1" />
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>@_localizer["ثبت معلومات"]</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table dir="rtl" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="Degree">درجه تحصیل</th>
+                            <th colname="University">مرجع تحصیلی</th>
+                            <th colname="Fieldofstudy">رشته تحصیلی</th>
+                            <th colname="CountryName">کشور</th>
+                            <th colname="Startdates">تاریخ شروع</th>
+                            <th colname="Enddates">تاریخ ختم</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,80 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Qouta.QoutaModel
+@{
+    ViewData["Title"] = "Qouta";
+
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">سهمیه استثنای ادارات</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Qouta_Qouta" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">مقدار مشخص شده سهمیه در ادارات </legend>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        نهاد/اداره
+                                    </label>
+                                    <select id="uxorganizationid" name="uxOrganizationID" type="text" asp-items="@Model.ListOfSpecialEntityType" class="select search" required>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                      مقدار سهمیه
+                                    </label>
+                                    <input id="uxqoutaamount" name="uxArchiveNo" type="number" class="form-control search" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        سال
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <select id="uxyearid" name="uxYearID" class="select search" asp-items="@Model.ListOfPersianYears" required>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i> ثبت معلومات </button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true" filter="true">
+                    <thead>
+                        <tr>
+                            <th colname="organName"> نهاد/اداره </th>
+                            <th colname="QoutaAmount"> تعداد سهمیه </th>
+                            <th colname="Year"> سال </th>
+                            <th colname="remain"> سهمیه باقی مانده </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+

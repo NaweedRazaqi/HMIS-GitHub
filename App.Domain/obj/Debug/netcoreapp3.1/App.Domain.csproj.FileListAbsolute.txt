@@ -1,0 +1,152 @@
+C:\Users\ZIA\source\repos\Passport\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\ZIA\source\repos\Passport\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\ZIA\source\repos\Passport\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\ZIA\source\repos\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\ZIA\source\repos\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\ZIA\source\repos\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\ZIA\source\repos\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\ZIA\source\repos\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\ZIA\source\repos\Passport\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\ZIA\source\repos\Passport\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\ZIA\source\repos\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\ZIA\source\repos\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\Mohammad Ayub\Desktop\Passport\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\Mohammad Ayub\Desktop\MOE\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+F:\NSIA Systems\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+F:\NSIA Systems\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+F:\NSIA Systems\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+F:\NSIA Systems\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+F:\NSIA Systems\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+F:\NSIA Systems\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+F:\NSIA Systems\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+F:\NSIA Systems\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+F:\NSIA Systems\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+F:\NSIA Systems\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+F:\NSIA Systems\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+F:\NSIA Systems\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\12'30'2020\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+D:\Projects\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+D:\Projects\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+D:\Projects\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+D:\Projects\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+D:\Projects\New Hajj\latest\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+D:\Projects\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+D:\Projects\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+D:\Projects\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+D:\Projects\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+D:\Projects\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+D:\Projects\New Hajj\latest\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\Administrator\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\Administrator\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\Administrator\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\Administrator\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\Administrator\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\Administrator\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\Administrator\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\Administrator\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\NSIA\Desktop\hmis\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\NSIA\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+C:\Users\NSIA\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\NSIA\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+C:\Users\NSIA\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+C:\Users\NSIA\Desktop\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\NSIA\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+C:\Users\NSIA\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+C:\Users\NSIA\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+C:\Users\NSIA\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\NSIA\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+C:\Users\NSIA\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+C:\Users\NSIA\Desktop\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb
+D:\HMIS\Haj MIS\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.deps.json
+D:\HMIS\Haj MIS\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.dll
+D:\HMIS\Haj MIS\HMIS\App.Domain\bin\Debug\netcoreapp3.1\App.Domain.pdb
+D:\HMIS\Haj MIS\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+D:\HMIS\Haj MIS\HMIS\App.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+D:\HMIS\Haj MIS\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csprojAssemblyReference.cache
+D:\HMIS\Haj MIS\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfoInputs.cache
+D:\HMIS\Haj MIS\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.AssemblyInfo.cs
+D:\HMIS\Haj MIS\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CoreCompileInputs.cache
+D:\HMIS\Haj MIS\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.csproj.CopyComplete
+D:\HMIS\Haj MIS\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.dll
+D:\HMIS\Haj MIS\HMIS\App.Domain\obj\Debug\netcoreapp3.1\App.Domain.pdb

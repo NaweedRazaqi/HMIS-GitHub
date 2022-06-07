@@ -1,0 +1,97 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Candidate.CandidateSelection.CandidateSelectionModel
+@{
+    ViewData["Title"] = "CandidateSelection";
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">انتخاب حجاج</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Candidate_CandidateSelection_CandidateSelection" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">حجاج از طریق سیستم انتخاب میگردد </legend>
+                <input type="hidden" id="uxbid" />
+                <div class="row">
+                    @*<div class="col-lg-10">
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        نام
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input id="uxfirstname" name="uxFirstName" type="text" class="form-control search" lang="ps" required />
+                                    <div class="form-control-feedback">
+                                        <i class="icon-search4 text-size-base"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        تخلص
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input id="uxlastname" name="uxLastName" type="text" class="form-control search" lang="ps" required />
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        نام پدر
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input id="uxfathername" name="uxFatherName" type="text" class="form-control search" lang="ps" required />
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        نوعیت کاندید
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <select id="uxcandidatetypeid" name="uxCandidateTypeID" class="select search" asp-items="@Model.ListOfCandidateTypes" required>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>*@
+                </div>
+
+            </fieldset>
+            <hr />
+
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table Filter="true" >
+                    <thead>
+                        <tr>
+                            <th colname="code"> کود </th>
+                            <th colname="firstname"> نام </th>
+                            <th colname="lastname"> تخلص </th>
+                            <th colname="fathername"> نام پدر </th>
+                            <th colname="grandfathername"> نام پدر کلان </th>
+                            <th colname="GenderName"> جنسیت </th>
+                            <th colname="Religion"> مذهب </th>
+                            <th colname="CandidateDariName"> نوعیت کاندید </th>
+                            <th colname="IsSelected"> انتخاب شده </th>
+                            @*<th colname="IsCanceledName"> لغو شده </th>*@
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

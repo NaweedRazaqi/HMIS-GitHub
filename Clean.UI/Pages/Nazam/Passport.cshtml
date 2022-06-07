@@ -1,0 +1,108 @@
+﻿@page "{handler?}/{id?}"
+
+@model Clean.UI.Pages.Nazam.NPassportModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Passport";
+    Layout = null;
+}
+
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">مشخصات پاسپورت و تذکره</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+
+        <form id="dv_Nazam_Passport" class="form sub-form page-component" type="form" prefix="uxi" parent="dv_Nazam_Nazim" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً مشخصات پاسپورت  ناظم را وارد نمایید</legend>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["نوعیت پاسپورت؟"]
+                            </label>
+                            <select id="uxipassporttypeid" name="uxiPassportTypeID" type="number" asp-items="@Model.ListOfPassportType" lang="en" class="select">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                شماره پاسپورت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxipassportno" name="uxiPassportNo" type="number" class="form-control search" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ صدور
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxiissuedate1" name="uxiIssueDate1" class="form-control Shamsi" sibling="uxiissuedate" placeholder="تارخ صدور به شمسی " />
+                                <input type="hidden" id="uxiissuedate" name="uxiIssueDate" class="form-control Miladi" sibling="uxiissuedate1" placeholder="تارخ تولد شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ انقضا
+
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxiexpairydate1" name="uxiExpairyDate1" class="form-control Shamsi" sibling="uxiexpairydate" placeholder="تارخ انقضا به شمسی " />
+                                <input type="hidden" id="uxiexpairydate" name="uxiExpairyDate" class="form-control Miladi" sibling="uxiexpairydate1" placeholder="تارخ تولد شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ملاحظات
+                            </label>
+                            <textarea id="uxiremarks" name="uxiRemarks" type="text" class="form-control" lang="en"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table style="direction: rtl;" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="PTypeText">نوعیت پاسپورت</th>
+                            <th colname="PassportNo">نمبر پاسپورت</th>
+                            <th colname="IssueDateShamsi">تاریخ صدور</th>
+                            <th colname="ExpairyDateShamsi">تاریخ انقضا</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+

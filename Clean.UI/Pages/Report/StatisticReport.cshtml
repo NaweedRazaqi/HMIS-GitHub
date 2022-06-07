@@ -1,0 +1,117 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Report.StatisticReportModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "ApplicationProcess";
+}
+
+<div class="panel panel-white">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">@_localizer["راپور های مقایسوی و احصائیه وی"]</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Report_StatisticReport" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">@_localizer["برای دریافت راپور و چارت ها از فورم ذیل استفاده کنید"]</legend>
+                <div class="row">
+                    <div class="col-md-10 ">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        @_localizer["بخش گزارش"]
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <select id="uxtableid" child="uxcolumnid" name="uxtableid" class="select" asp-items="@Model.ListOfTables" required>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        @_localizer["شاخص گزارش"]
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <select id="uxcolumnid" name="uxcolumnid" data-type="Columns" class="select" required>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group">
+                                    <label class="text-bold">
+                                        @_localizer["تاریخ شروع"]
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="icon-calendar3"></i>
+                                        </span>
+                                        <input type="text" id="uxStartDateShamsi" name="uxStartDateShamsi" class="form-control Shamsi" sibling="uxStartDate" placeholder="تارخ تولد شمسی" required />
+                                        <input type="hidden" id="uxStartDate" name="uxDateOfBirth" class="form-control Miladi" sibling="uxStartDateShamsi" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group">
+                                    <label class="text-bold">
+                                        @_localizer["تاریخ ختم"]
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="icon-calendar3"></i>
+                                        </span>
+                                        <input type="text" id="uxEndDateShamsi" name="uxEndDateShamsi" class="form-control Shamsi" sibling="uxEndDate" placeholder="تاریخ تولد میلادی" required />
+                                        <input type="hidden" id="uxEndDate" name="uxEndDate" class="form-control Miladi" sibling="uxEndDate" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        @_localizer["نوعیت چارت"]
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <select id="uxGraphType" name="uxGraphType" class="SelectChart" dir="ltr">
+                                        <optgroup label="چارت ساده ">
+                                            <option>Chart ROSE</option>
+                                            <option>Chart PIE</option>
+                                            <option>Chart COLUMNS</option>
+                                            <option>Chart DESC</option>
+                                            <option>Chart ASC</option>
+                                            <option>Chart BAR</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="report"><i class="icon-floppy-disk position-right"></i>مشاهده گزارش</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-chart" dir="ltr">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="panel-body" id="GraphDIV">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

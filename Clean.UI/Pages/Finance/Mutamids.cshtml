@@ -1,0 +1,101 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Finance.MutamidsModel
+@{
+    ViewData["Title"] = "Mutamids";
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">معتمد</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Finance_Mutamids" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">مشخصات  معتمد را وارد کنید </legend>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نام
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxname" name="uxName" type="text" class="form-control search" lang="ps" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                عنوان وظیفه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxjobtitle" name="uxJobtitle" type="text" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                اداره
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxoffice" name="uxOffice" type="text" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ولایت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxprovincesid" name="uxProvincesID" child="uxdistrictsid" class="select search" asp-items="@Model.ListOfProvinces" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ولسوالی / ناحیه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxdistrictsid" name="uxDistrictsID" data-type="Province" class="select search" asp-items="@Model.ListOfDistricts" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="Name">نام</th>
+                            <th colname="Jobtitle">عنوان وظیفه</th>
+                            <th colname="ProvincesName">ولایت</th>
+                            <th colname="DistrictsName">ولسوالی</th>
+                            <th colname="Office">دفتر</th>
+                            @*<th colname="IsActiveName">فعال است؟</th>*@
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

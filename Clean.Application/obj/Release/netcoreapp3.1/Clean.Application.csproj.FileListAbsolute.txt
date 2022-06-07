@@ -1,0 +1,158 @@
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\ZIA\source\repos\Passport\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\ZIA\source\repos\Passport\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+C:\Users\ZIA\source\repos\Passport\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CoreCompileInputs.cache
+C:\Users\ZIA\source\repos\Passport\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+C:\Users\ZIA\source\repos\Passport\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+C:\Users\ZIA\source\repos\Passport\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+C:\Users\ZIA\source\repos\Passport\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+F:\NSIA Systems\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+F:\NSIA Systems\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+F:\NSIA Systems\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+F:\NSIA Systems\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+F:\NSIA Systems\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CoreCompileInputs.cache
+F:\NSIA Systems\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+F:\NSIA Systems\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+F:\NSIA Systems\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CoreCompileInputs.cache
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+D:\Projects\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+D:\Projects\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+D:\Projects\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+D:\Projects\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+D:\Projects\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CoreCompileInputs.cache
+D:\Projects\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+D:\Projects\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+D:\Projects\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.deps.json
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Application.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Persistence.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Persistence.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\App.Domain.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\bin\Release\netcoreapp3.1\Clean.Domain.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Application\obj\Release\netcoreapp3.1\Clean.Application.pdb

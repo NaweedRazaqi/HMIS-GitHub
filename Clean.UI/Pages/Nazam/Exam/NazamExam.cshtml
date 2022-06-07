@@ -1,0 +1,74 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Nazam.Exam.NazamExamModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Nazam Exam";
+    Layout = null;
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">امتحانات</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Nazam_Exam_NazamExam" class="form sub-form page-component" parent="dv_Nazam_Nazim" type="form" prefix="ux" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">مشخصات امتحان را وارد کنید </legend>
+                <input type="hidden" id="uxbid" />
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-xs-12 ">
+                                <div class="form-group">
+                                    <label class="text-bold">
+                                        کمیته
+                                        <span class="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <select id="uxcommiteeid" name="uxCommiteeID" class="select search" asp-items="@Model.ListOfCommitee" required>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 ">
+                                <div class="form-group">
+                                    <label class="text-bold">
+                                        تاریخ
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                        <input type="text" id="uxdate1" name="uxDate1" class="form-control Shamsi" sibling="uxdate" placeholder="تارخ امتحان به شمسی " required />
+                                        <input type="hidden" id="uxdate" name="uxDate" class="form-control Miladi search" sibling="uxdate1" placeholder="تارخ تولد شمسی " />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i> ثبت معلومات </button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CommiteeName"> نام کمیته </th>
+                            <th colname="DateShamsi"> تاریخ امتحان </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

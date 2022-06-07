@@ -1,0 +1,563 @@
+﻿@page
+@model Clean.UI.Pages.Candidate.Prints.PrintformModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>معلومات بخش تعرفه</title>
+    <link href="~/assets/css/print.css" rel="stylesheet" />
+    <link href="~/assets/css/page.css" rel="stylesheet" />
+    <style>
+        .signholder {
+            border: 2px solid #808080;
+            margin-top: 100px;
+            height: 0px;
+            width: 300px;
+            margin: 0px 0px;
+            margin-top: -10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+
+        @@media print {
+            /*body {
+                margin: 0 auto;
+                padding: 0;
+                background: #fff;
+            }*/
+            .rtl .div-form {
+                float: none !important;
+                right: auto !important;
+                left: auto !important;
+                position: relative;
+                top: auto !important;
+                width: 100%;
+                margin: 0;
+                box-shadow: none !important;
+            }
+
+            #FirstTable {
+                position: relative;
+                margin-right: 10px;
+                margin-top: -20px;
+            }
+
+            .table {
+                border-spacing: 0;
+                border-collapse: collapse;
+                width: 99%;
+                margin-top: 10px;
+                top: -21px;
+            }
+
+            #secondcopy {
+                position: relative;
+                padding-top: -5px;
+                margin: auto;
+                bottom: -22px;
+                top: -89px;
+            }
+
+
+            #thirdcopy {
+                position: relative;
+                margin: auto;
+                padding-bottom: 10px;
+                top: -159px;
+            }
+
+            hr {
+                display: none;
+            }
+        }
+
+        .div-row, .div-row label {
+            font-size: 16px;
+        }
+
+            .div-row label {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+        .form-title {
+            border-width: 2px;
+            font-size: 11px;
+            padding-bottom: 15px;
+            color: #222;
+            border-bottom: 3px solid #222;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .col-50 {
+            width: 49% !important;
+            float: right;
+        }
+
+        .border-right {
+            border-right: 1px solid #eee;
+        }
+
+        margin-right-2 {
+            margin-right: 2px;
+        }
+
+        .div-row .eng {
+            width: 49% !important;
+            min-width: 0px;
+            font-size: 14px !important;
+            font-family: sans-serif;
+            float: left !important;
+            direction: ltr;
+        }
+
+        .eng label, .eng label {
+            float: left !important;
+            direction: ltr;
+            width: auto !important;
+        }
+
+        .div-photo {
+            margin-top: 10px;
+        }
+
+        .div-photo {
+            background: #fff;
+            box-shadow: none;
+        }
+
+        .div-mainform .title {
+            border-bottom: none !important;
+        }
+
+            .div-mainform .title .div-logo img {
+                height: 130px;
+                width: auto;
+            }
+
+            .div-mainform .title .div-logo {
+                left: 45px;
+                position: absolute;
+            }
+
+        .pull-right {
+            float: right;
+        }
+
+        .div-mainform .title .div-bottom .div-truck div span {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 11px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #000;
+            align-content: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .div-logo-right {
+            position: absolute;
+            right: 45px;
+        }
+
+        .div-logo {
+            top: 20px;
+        }
+
+        .div-logo-right {
+            position: absolute;
+            left: 45px;
+        }
+
+        .title {
+            height: 150px !important;
+            position: relative;
+        }
+
+            .title .div-text {
+                width: 50%;
+                position: relative;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+
+        .div-queue {
+            height: 80px;
+            position: absolute;
+            width: 30%;
+            top: 150px;
+            right: 34%;
+        }
+
+        .col-25 {
+            width: 25%;
+            float: right;
+        }
+
+        .col-30 {
+            width: 30%;
+            float: right;
+        }
+
+        .col-40 {
+            width: 40%;
+            float: right;
+        }
+
+        .col-20 {
+            width: 20%;
+            float: right;
+        }
+
+        .col-100 {
+            width: 100%;
+            float: right;
+        }
+
+        .col-80 {
+            width: 80%;
+            float: right;
+        }
+
+        .top-10 {
+            margin-top: 10px;
+        }
+
+        .section-title {
+            margin-top: 5px;
+            border-top: 3px solid #777;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #777;
+            font-size: 11px;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 97%;
+            margin-top: 10px;
+            position: relative;
+            top: -21px;
+            left: 10px;
+        }
+
+        .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: top;
+            border-top: 1px solid #222
+        }
+
+        .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+            vertical-align: middle;
+        }
+
+        .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+            border: 1px solid #ddd;
+            border-top-color: rgb(221, 221, 221);
+            border-top-style: solid;
+            border-top-width: 1px;
+        }
+
+        td, th {
+            font-size: 12px !important;
+            padding: 5px;
+        }
+
+        body {
+            background: #737373;
+        }
+
+        .table > tbody {
+        }
+
+        #no_imagepath {
+            width: 100%;
+            height: 124px;
+            position: relative;
+            top: 186px;
+            z-index: 1;
+            left: 4px;
+        }
+
+        #marks {
+            position: relative;
+            width: 55%;
+            right: 0;
+            left: 22rem;
+            flex-direction: row-reverse;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        #attendance {
+            position: absolute;
+            width: 17rem;
+            left: 2px;
+            top: 172px;
+        }
+
+        #Asasnumber {
+            position: absolute;
+            width: 17rem;
+            left: 5px;
+            top: 23rem;
+        }
+
+        #Signaute {
+            position: absolute;
+            top: 32rem;
+            left: 5px;
+            width: 18rem;
+        }
+
+        .img-barcode {
+            position: absolute;
+            left: 0;
+            top: 54px;
+        }
+
+        #barcode1 {
+            height: 6rem;
+            height: 5rem;
+            width: 12rem;
+            position: absolute;
+            top: 0;
+            bottom: 8px;
+        }
+
+        .Middlelabel {
+            position: relative;
+            left: 55px;
+            line-height: 19px;
+        }
+
+        #footer {
+            direction: rtl;
+            position: relative;
+            line-height: 19px;
+            margin-right: 17px;
+            padding-bottom: 30px;
+        }
+
+        #mamor {
+            direction: rtl;
+            position: relative;
+            line-height: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        #mamor1 {
+            direction: rtl;
+            position: relative;
+            line-height: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        #mohr1 {
+            line-height: 10px;
+            margin-top: 10px;
+            position: relative;
+            padding-right: 200px;
+        }
+
+        #mohr {
+            line-height: 10px;
+            margin-top: 10px;
+            position: relative;
+            padding-right: 200px;
+        }
+    </style>
+    <script src="~/assets/js/core/libraries/jquery.min.js"></script>
+    <script src="~/assets/js/plugins/barcode/JsBarcode.all.js"></script>
+</head>
+<body style="direction:ltr;">
+    <div id="form" class="div-mainform div-form" style="margin-right:auto; margin-left:auto;">
+        <div class="row">
+            <div class="row">
+                <input type="hidden" value="@Model.Code" id="code_print" />
+                <table>
+                    <tr>
+                        <th align="center" valign="middle" class="Middlelabel">
+                            <br /><br />
+                            <h3>
+                                وزارت ارشاد٬حج و اقاف
+                            </h3>
+                            <h3>
+                                (
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                )
+                                ریاست ارشاد٬حج و اقاف
+                            </h3>
+                            <h4>سند ثبت نام</h4>
+                            <br />
+                        </th>
+                        <th align="right" width="15%">
+                            &nbsp;&nbsp;&nbsp;
+                            <img src="~/assets/img/MOHIA.jpg" style="width:90px; height:90px; position:relative;top:1rem" />
+                            <br />
+                        </th>
+                        <th class="img-barcode" align="left">
+                            <img id="barcode1">
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <table width="100%" class="table-bordered" dir="rtl">
+                <tr>
+                    <th id="ths" style="border:none;direction:rtl; text-align:center;">
+
+                        شماره نوبت
+                        (
+                        &nbsp;
+                        &nbsp;)
+                        <span></span>
+                    </th>
+                </tr>
+                <tbody style="border:1px solid; direction:rtl">
+                    <tr>
+                        <th> اسم&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> ولد<span></span></th>
+                        <th> ولدیت&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> ولایت&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> ولسوالی/ناحیه&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th>قریه/گذر&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th>شماره تذکره&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th>مذهب&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th>نمبر تشخیصیه&nbsp;&nbsp;&nbsp;<span></span></th>
+                    </tr>
+
+                    <tr style="align-content:center">
+
+                        <td>
+                            @Model.FirstName
+                        </td>
+                        <td>@Model.FatherName</td>
+                        <td>@Model.GrandFatherName</td>
+                        <td>@Model.Province</td>
+                        <td>@Model.Destricts</td>
+                        <td>@Model.Vilege</td>
+                        <td>@Model.NIDText</td>
+                        <td>@Model.Religion</td>
+                        <td>@Model.Code</td>
+                    </tr>
+                    <tr>
+                        <th> مبلغ قسط اول&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> شماره تعرفه اول&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> شماره آویز اول&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th colspan="2"> تاریخ تحویلدهی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> مبلغ قسط دوم&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> شماره تعرفه دوم&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> شماره آویز دوم&nbsp;&nbsp;&nbsp;<span></span></th>
+                        <th> تاریخ تحویلدهی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span></th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            @Model.Amount
+                        </td>
+                        <td>@Model.InstallmentNo</td>
+                        <td>@Model.RecipetNo</td>
+                        <td colspan="2">@Model.DateShamsi</td>
+                        <td>
+                            @Model.Amount2
+                        </td>
+                        <td>@Model.InstallmentNo2</td>
+                        <td>@Model.RecipetNo2</td>
+                        <td>@Model.DateShamsi2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align:right">
+                            <table id="mamor">
+                                <tr>
+                                    <th>اسم مامور ثبت نام:</th>
+                                </tr>
+                                <tr>
+                                    <th>امضاء:</th>
+                                </tr>
+                                <tr>
+                                    <th>تاریخ:</th>
+                                </tr>
+                                <tr>
+                                    <th id="mohr1">مهر</th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td colspan="5" style="text-align:right">
+                            <table id="mamor1">
+                                <tr>
+                                    <th>اسم مامور ثبت قسط دوم:</th>
+                                </tr>
+                                <tr>
+                                    <th>امضاء:</th>
+                                </tr>
+                                <tr>
+                                    <th>تاریخ:</th>
+                                </tr>
+                                <tr>
+                                    <th id="mohr">مهر</th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+            </table>
+            <div id="footer">
+                <p>شماره آرشیف (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</p>
+                <p>۱- حفاظت وداشتن این سند الی تسلیمی پاسپورت لازمی میباشد.</p>
+                <p>۲- تسلیم نمودن این سنددر وقت اخذ پاسپورت حتمی میباشد.</p>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                var Code = $('#code_print').val();
+                var MOE = "MOE-SMIS";
+                JsBarcode("#barcode1", `${MOE}${Code}`);
+            });
+
+
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Finance.MoneyBackModel
+@{
+    ViewData["Title"] = "MoneyBack";
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">باز پرداخت</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Finance_MoneyBack" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">مشخصات  باز پرداخت را وارد کنید </legend>
+                <input type="hidden" id="uxbid" />
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                اسم کاندید
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxcandidateid" name="uxCandidateID" class="select search" asp-items="@Model.ListOfCandidate" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                @*<div class="col-md-3 col-sm-12 col-xs-12 ">
+                    <div class="form-group has-feedback has-feedback-left">
+                        <label class="text-bold">
+                            تاریخ
+                            <span class="text-danger">*</span>
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                            <input type="text" id="uxdate1" name="uxDate1" class="form-control Shamsi" sibling="uxdate" placeholder="تارخ به شمسی " required />
+                            <input type="hidden" id="uxdate" name="uxDate" class="form-control Miladi" sibling="uxdate1" placeholder="تارخ شمسی " />
+                        </div>
+                    </div>
+                 </div>*@
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                سال انتخاب حاجی
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxhajjyearid" name="uxHajjYearID" class="select search" asp-items="@Model.ListOfHajjYear" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر مکتوب بانک
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxnumbermaktoobbank" name="uxNumberMaktoobBank" type="text" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ برگشت پول
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxmoneyreturndate1" name="uxMoneyReturnDate1" class="form-control Shamsi" sibling="uxmoneyreturndate" placeholder="تاریخ برگشت پول به شمسی " required />
+                                <input type="hidden" id="uxmoneyreturndate" name="uxMoneyReturnDate" class="form-control Miladi" sibling="uxmoneyreturndate1" placeholder="تارخ شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                واحد پولی
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxcurrencyid" name="uxCurrencyID" class="select" asp-items="@Model.ListOfCurrency" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                مقدار برگشت داده شده
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxreturnedamount" name="uxReturnedAmount" type="text" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                اقارب
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxrelativeid" name="uxRelativeID" class="select" asp-items="@Model.ListOfRelatives" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                سال
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxyearid" name="uxYearID" class="select" asp-items="@Model.ListOfPersianYears" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                توضیحات
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxjustification" name="uxJustification" type="text" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ارزیابی شده توسط
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxcheckedby" name="uxcheckedBy" type="text" class="form-control" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ملاحظات
+                            </label>
+                            <textarea id="uxcomments" name="uxComments" type="text" class="form-control"></textarea>
+                            @*<div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام متقاضی</th>
+                            <th colname="YearName">سال</th>
+                            <th colname="HajjYearName">سال انتخاب حاجی</th>
+                            <th colname="NumberMaktoobBank">نمبر مکتوب بانک</th>
+                            <th colname="MoneyReturnDateShamsi">تاریخ برگشت پول</th>
+                            <th colname="CurrencyName">واحد پولی</th>
+                            <th colname="ReturnedAmount">مقدار برگشت داده شده</th>
+                            <th colname="CheckedBy">ارزیابی شده توسط</th>
+                            <th colname="RelativeName">اقارب</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

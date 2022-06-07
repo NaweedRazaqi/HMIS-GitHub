@@ -1,0 +1,204 @@
+﻿@page "{handler?}/{id?}"
+
+@model Clean.UI.Pages.Candidate.RelativeModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Relative";
+    Layout = null;
+}
+
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">شهرت اقارب</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+
+        <form id="dv_Candidate_Relative" class="form sub-form page-component" type="form" prefix="uxs" parent="dv_Candidate_Candidate" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً شهرت اقارب را وارد نمایید</legend>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نام
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxsfirstname" name="uxsFirstName" type="text" class="form-control search" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تخلص
+                                <span class="text-danger">&nbsp;</span>
+                            </label>
+                            <input id="uxslastname" name="uxsLastName" type="text" class="form-control search"  />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نام پدر
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxsfathername" name="uxsFatherName" type="text" class="form-control search" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نام پدرکلان
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxsgrandfathername" name="uxsGrandFatherName" type="text" class="form-control search" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                شماره تماس
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxsphone" name="uxsPhone" type="number" class="form-control search" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                شماره تماس نزدیکان
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxsmobile" name="uxsMobile" type="number" class="form-control search" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                قرابت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsrelationshipid" name="uxsRelationshipID" asp-items="@Model.ListOfRelationShip" class="select" required>
+                                <option></option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                جنسیت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsgenderid" name="uxsGenderId" class="select" asp-items="@Model.ListOfGenders" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <label class="text-bold" style="direction:rtl"> @_localizer["سکونت فعلی:"]</label>
+                <br />
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ولایت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsprovincesid" name="uxsProvincesID" child="uxsdistrictid" class="select search" asp-items="@Model.ListOfProvinces" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ولسوالی / ناحیه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsdistrictid" name="uxsDistrictID" data-type="Province" class="select search" asp-items="@Model.ListOfDistricts" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                آدرس مکمل
+                            </label>
+                            <textarea id="uxsfulladdress" name="uxsFullAddress" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row nid-row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 national-id">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                نوع تذکره
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxsdocumenttypeid" name="uxsdocumenttypeid" asp-items="@Model.ListOfDocumentTypes" class="select" required>
+                                <option></option>
+                            </select>
+                            <input type="hidden" id="uxsnid" class="national-id-input" sibling="uxsdocumenttypeid" name="uxsnid" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ملاحظات
+                            </label>
+                            <textarea id="uxsremarks" name="uxsRemarks" type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table style="direction: rtl;" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="FirstName">نام</th>
+                            <th colname="LastName">تخلص</th>
+                            <th colname="FatherName">نام پدر</th>
+                            <th colname="GrandFatherName">نام پدر کلان</th>
+                            <th colname="NIDText">سند هویت</th>
+                            <th colname="Phone">شماره تماس 1</th>
+                            <th colname="Mobile">شماره تماس 2</th>
+                            <th colname="GenderName">جنسیت</th>
+                            <th colname="ProvincesName">ولایت</th>
+                            <th colname="DistrictName">ولسوالی</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+
+    </div>
+</div>

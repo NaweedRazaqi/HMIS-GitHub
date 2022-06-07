@@ -1,0 +1,91 @@
+﻿@page "{handler?}/{id?}"
+
+@model Clean.UI.Pages.Candidate.JobModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Job";
+    Layout = null;
+}
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">وظیفه</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Candidate_Job" class="form sub-form page-component" type="form" prefix="uxj" parent="dv_Candidate_Candidate" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً وظیفه حاجی را وارد نمایید</legend>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نوع وظیفه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxjjobtilteid" name="uxjJobTilteID" child="uxjorganizationid" class="select" asp-items="@Model.ListOfJobTitle" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="organ" style="display:none">
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                اداره
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxjorganizationid" name="uxjOrganizationId" data-type="Job" class="select search">
+                                <option></option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                عنوان وظیف
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxjjobtitle" name="uxjJobTitle" type="text" class="form-control search" lang="ps" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table style="direction: rtl;" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="JobType">نوعیت وظیفه</th>
+                            <th colname="JobTitle">عنوان وظیفه</th>
+                            <th colname="OrganizationName">اداره</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $('#uxjjobtilteid').change(function () {
+        if ($(this).val() == "1") {
+            $('#organ').show();
+
+        }
+        else
+            $('#organ').hide();
+    });
+</script>

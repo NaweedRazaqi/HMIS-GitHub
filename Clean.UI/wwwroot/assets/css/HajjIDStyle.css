@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Bnazanin';
+    src: url('../fonts/OCRB/Bahij Nazanin-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bahij Helvetica';
+    src: url('../fonts/OCRB/Bahij Helvetica Neue-Bold_25.ttf');
+}
+.front-child {
+    position: relative;
+}
+
+.frontUl {
+    position: absolute;
+    left: 31rem;
+    top: 125px;
+    font-size: 20px;
+}
+
+    .frontUl li {
+        list-style-type: none;
+        line-height: 29px;
+    }
+
+.img-pic img {
+    position: absolute;
+    top: 115px;
+    left: 73px;
+}
+
+.img-barcode img {
+    position: absolute;
+    bottom: 87px;
+    left: 22px;
+}
+
+.frontUlImgSec li {
+    list-style-type: none;
+}
+
+.img-blur {
+    display: none;
+}
+
+    .img-blur img {
+        position: absolute;
+        top: 12rem;
+        left: 24px;
+    }
+
+.exp-date {
+    position: absolute;
+    bottom: 9px;
+    left: 16px;
+    font-family: Bnazanin;
+    font-size: 17px;
+}
+
+.BackUl {
+    position: absolute;
+    left: 25rem;
+    top: 138px;
+    font-family: Bahij Helvetica;
+    font-size: 20px;
+    text-align: left;
+}
+
+    .BackUl li {
+        list-style-type: none;
+        line-height: 1.8;
+    }
+
+.BackUlArabicSec li {
+    list-style-type: none;
+}
+
+.BackUlArabicSec {
+    position: absolute;
+    top: 137px;
+    left: 27rem;
+    font-family: Bnazanin;
+    font-size: 20px;
+}
+
+    .BackUlArabicSec li {
+        line-height: 55px;
+    }
+#barcode1 {
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+}
+
+@media print {
+    .frontUl li {
+        list-style-type: none;
+        line-height: 1.3;
+        padding-top: 1px;
+
+
+    }
+
+    .exp-date {
+        position: absolute;
+        bottom: 7px;
+        left: 5px;
+        font-family: Bnazanin;
+        font-size: 10px;
+    }
+    #barcode1 {
+        position: absolute;
+        bottom: 75px;
+        left: 0rem;
+    }
+
+    .img-pic img {
+        position: absolute;
+        top: 115px;
+        left: 10;
+    }
+}

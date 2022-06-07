@@ -1,0 +1,78 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Nazam.Evaluation.EvaluationForm.EvaluationFormModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "EvaluationForm";
+    Layout = null;
+}
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">فورم ارزیابی ناظم</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Nazam_Evaluation_EvaluationForm" class="form sub-form page-component" parent="dv_Nazam_Evaluation_NazimProfile" type="form" prefix="uxn" parentcol="NID">
+            <fieldset class="content-group">
+                <legend class="text-bold">ارزیابی ناظمین </legend>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["محل ناظم"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxnzoneid" name="uxnZoneId" class="select" asp-items="@Model.Zones" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["مشخصه ارزیابی"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxnevid" name="uxnEvid" class="select" asp-items="@Model.Category" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                @_localizer["نتجه"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxnmarkid" name="uxnMarkId" class="select" asp-items="@Model.Marks" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>@_localizer["ثبت معلومات"]</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table dir="rtl" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName"> نام ناظم </th>
+                            <th colname="zone"> محل فعالیت </th>
+                            <th colname="result">نتجه ارزیابی </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+

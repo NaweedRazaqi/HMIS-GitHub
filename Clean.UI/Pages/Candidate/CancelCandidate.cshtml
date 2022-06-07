@@ -1,0 +1,86 @@
+﻿@page "{handler?}/{id?}"
+
+@model Clean.UI.Pages.Candidate.CancelCandidateModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "CancelCandidate";
+    Layout = null;
+}
+
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">لغو حاجی یا ناظم</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+
+        <form id="dv_Candidate_CancelCandidate" class="form sub-form page-component" type="form" prefix="uxi" parent="dv_Profile_Profile" parentcol="CandidateID">
+            @*<input type="hidden" value="2" id="hajjprocessid" />*@
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً مشخصات لغو حاجی یا ناظم را وارد نمایید</legend>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                تاریخ
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxidate1" name="uxiDate1" class="form-control Shamsi" sibling="uxidate" placeholder="تارخ به شمسی " required />
+                                <input type="hidden" id="uxidate" name="uxiDate" class="form-control Miladi" sibling="uxidate1" placeholder="تارخ تولد شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                دلایل
+                            </label>
+                            <textarea id="uxicancelreasons" name="uxiCancelReasons" type="text" class="form-control" lang="ps"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ملاحظات
+                            </label>
+                            <textarea id="uxiremarks" name="uxiRemarks" type="text" class="form-control" lang="ps"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table style="direction: rtl;" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="DateShamsi">تاریخ</th>
+                            @*<th colname="ProvinceName">آدرس</th>*@
+                            <th colname="CancelReasons">دلایل</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+
+    </div>
+</div>
+

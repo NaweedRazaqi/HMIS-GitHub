@@ -1,0 +1,95 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Candidate.VisaInfoModel
+@{
+    ViewData["Title"] = "VisaInfo";
+    Layout = null;
+}
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h1 class="panel-title">ویزه</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Candidate_VisaInfo" class="form sub-form page-component" type="form" prefix="uxi" parent="dv_Profile_Profile" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً مشخصات ویزه حاجی یا ناظم را وارد نمایید</legend>
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ صدور
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxiissuedate1" name="uxiIssueDate1" class="form-control Shamsi" sibling="uxiissuedate" placeholder="تارخ صدور به شمسی " required />
+                                <input type="hidden" id="uxiissuedate" name="uxiIssueDate" class="form-control Miladi" sibling="uxiissuedate1" placeholder="تارخ تولد شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ انقضا
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxiexpairydate1" name="uxiExpairyDate1" class="form-control Shamsi" sibling="uxiexpairydate" placeholder="تارخ انقضا به شمسی " required />
+                                <input type="hidden" id="uxiexpairydate" name="uxiExpairyDate" class="form-control Miladi" sibling="uxiexpairydate1" placeholder="تارخ تولد شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر ویزه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxivisano" name="uxiVisaNo" type="text" lang="en" class="form-control search" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نوع ویزه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxivisatypeid" name="uxiVisaTypeId" class="select" asp-items="@Model.ListOfVisaType" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i> ثبت معلومات </button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="IssueDateShamsi">تاریخ صدور</th>
+                            <th colname="ExpairyDateShamsi">تاریخ انقضا</th>
+                            <th colname="VisaNo">نمبر ویزه</th>
+                            <th colname="VisaTypeName"> نوع ویزه</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

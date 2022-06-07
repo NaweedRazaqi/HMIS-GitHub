@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "ntyyPVsMQX2X07jIcooNR9oXx7kiH9i7MN91Eq5t8EEM1ylGU2Cp/J1P3bXFJqs7NjJwhXldhrR3Xn3yy55tgw==",
+  "success": true,
+  "projectFilePath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Domain\\App.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.compression.net.core\\18.4.0.35\\syncfusion.compression.net.core.18.4.0.35.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.ej2.aspnet.core\\19.1.0.58\\syncfusion.ej2.aspnet.core.19.1.0.58.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.licensing\\19.1.0.58\\syncfusion.licensing.19.1.0.58.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.pdf.net.core\\18.4.0.35\\syncfusion.pdf.net.core.18.4.0.35.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

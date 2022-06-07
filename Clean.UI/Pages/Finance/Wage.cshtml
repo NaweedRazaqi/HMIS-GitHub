@@ -1,0 +1,185 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Finance.WageModel
+@{
+    ViewData["Title"] = "Wage";
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">حق الزحمه</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Finance_Wage" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">مشخصات  حق الزحمه را وارد کنید </legend>
+                <input type="hidden" id="uxbid" />
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نام
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxname" name="uxName" type="text" class="form-control search" lang="ps" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نام پدر
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxfathername" name="uxFatherName" type="text" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نوعیت قرار داد کارمند
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxemployeecontracttypeid" name="uxEmployeeContractTypeID" class="select" asp-items="@Model.ListOfEmployeeContractType" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                عنوان وظیفه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxjobtitle" name="uxJobTitle" type="text" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                کم کردن معاش به دلیل غیر حاضری
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxabsentydeduction" name="uxAbsentyDeduction" type="number" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxdate1" name="uxDate1" class="form-control Shamsi" sibling="uxdate" placeholder="تارخ به شمسی " required />
+                                <input type="hidden" id="uxdate" name="uxDate" class="form-control Miladi" sibling="uxdate1" placeholder="تارخ شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                وضع تکس
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxtaxdeduction" name="uxTaxDeduction" type="number" class="form-control" lang="en" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                مزد روزانه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxperdaywage" name="uxPerDayWage" type="number" class="form-control" lang="en" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                کل پرداخت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxtotalpayment" name="uxTotalPayment" type="number" class="form-control " lang="en" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                کل دستمزد
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxtotalwage" name="uxTotalWage" type="number" class="form-control" lang="en" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                کمیته کاری
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxworkingcommitee" name="uxWorkingCommitee" type="text" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تعداد روزها 
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxnoofdays" name="uxNoOfDays" type="number" class="form-control" lang="en" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ملاحظات
+                            </label>
+                            <textarea id="uxcomments" name="uxComments" type="text" class="form-control" lang="ps"></textarea>
+                            @*<div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="Name">نام کارمند</th>
+                            <th colname="FatherName">نام پدر</th>
+                            <th colname="JobTitle">عنوان وظیفه</th>
+                            <th colname="EmployeeContractTypeName">نوعیت قرارداد کارمند</th>
+                            <th colname="WorkingCommitee">کمیته کاری</th>
+                            <th colname="PerDayWage">مزد روزانه</th>
+                            <th colname="NoOfDays">تعداد روزها</th>
+                            <th colname="TotalWage">کل دستمزد</th>
+                            <th colname="TotalPayment">کل پرداخت</th>
+                            <th colname="DateShamsi">تاریخ</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

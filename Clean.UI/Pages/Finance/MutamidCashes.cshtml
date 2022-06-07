@@ -1,0 +1,188 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Finance.MutamidCashesModel
+@{
+    ViewData["Title"] = "MutamidCash";
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">پول نقد معتمد</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Finance_MutamidCashes" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">مشخصات پول نقد معتمد را وارد کنید </legend>
+                <input type="hidden" id="uxbid" />
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر حکم
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxhukamnumber" name="uxHukamNumber" type="number" class="form-control search" lang="ps" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر استعلام
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxistelamnumber" name="uxIstelamNumber" type="number" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ استعلام
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxistelamdate1" name="uxIstelamDate1" class="form-control Shamsi" sibling="uxistelamdate" placeholder="تاریخ استعلام به شمسی " required />
+                                <input type="hidden" id="uxistelamdate" name="uxIstelamDate" class="form-control Miladi" sibling="uxistelamdate1" placeholder="تارخ شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نرخ تبادله
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxexchangerate" name="uxExchangeRate" type="text" class="form-control search" lang="ps" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                منبع مصرف
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxexpensecenterid" name="uxExpenseCenterID" class="select" asp-items="@Model.ListOfExpenseCenters" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxdate1" name="uxDate1" class="form-control Shamsi" sibling="uxdate" placeholder="تاریخ به شمسی " required />
+                                <input type="hidden" id="uxdate" name="uxDate" class="form-control Miladi" sibling="uxdate1" placeholder="تاریخ شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                مقدار
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxamount" name="uxAmount" type="number" class="form-control" lang="en" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                معتمد
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxmutamidid" name="uxMutamidID" class="select" asp-items="@Model.ListOfMutamid" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                واحد پولی
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxcurrencyid" name="uxCurrencyID" class="select" asp-items="@Model.ListOfCurrency" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر مکتوب
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxnumbermaktoob" name="uxNumberMaktoob" type="number" class="form-control" lang="en" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ مکتوب
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxmaktoobdate1" name="uxMaktoobDate1" class="form-control Shamsi" sibling="uxmaktoobdate" placeholder="تاریخ مکتوب به شمسی " required />
+                                <input type="hidden" id="uxmaktoobdate" name="uxMaktoobDate" class="form-control Miladi" sibling="uxmaktoobdate1" placeholder="تاریخ شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ملاحظات
+                            </label>
+                            <textarea id="uxexplanation" name="uxExplanation" type="text" class="form-control" lang="ps"></textarea>
+                            @*<div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="DateShamsi">تاریخ</th>
+                            <th colname="NumberMaktoob">نمبر مکتوب</th>
+                            <th colname="HukamNumber">نمبر حکم</th>
+                            <th colname="MaktoobDateShamsi">تاریخ مکتوب</th>
+                            <th colname="Amount">مقدار</th>
+                            <th colname="IstelamNumber">نمبر استعلام</th>
+                            <th colname="IstelamDateShamsi">تاریخ استعلام</th>
+                            <th colname="CurrencyName">واحد پولی</th>
+                            <th colname="MutamidName">نام معتمد</th>
+                            <th colname="ExchangeRate">نرخ تبادله</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

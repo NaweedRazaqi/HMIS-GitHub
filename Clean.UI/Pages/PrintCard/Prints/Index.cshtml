@@ -1,0 +1,597 @@
+﻿@page
+@model Clean.UI.Pages.PrintCard.Prints.IndexModel
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ResultSheet</title>
+    <link href="~/assets/css/print.css" rel="stylesheet" />
+    <link href="~/assets/css/page.css" rel="stylesheet" />
+    <style>
+        .signholder {
+            border: 2px solid #808080;
+            margin-top: 100px;
+            height: 0px;
+            width: 300px;
+            margin: 0px 0px;
+            margin-top: -10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+
+        @@media print {
+            body {
+                margin: 0 auto;
+                padding: 0;
+                background: #fff;
+            }
+
+            .rtl .div-form {
+                float: none !important;
+                right: auto !important;
+                left: auto !important;
+                position: relative;
+                top: auto !important;
+                width: 100%;
+                margin: 0;
+                box-shadow: none !important;
+            }
+
+            h2 {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: #000;
+            }
+
+            h3 {
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: #000;
+            }
+
+            hr {
+                display: none;
+            }
+
+            .table {
+                border-spacing: 0;
+                border-collapse: collapse;
+                width: 99%;
+                margin-top: 10px;
+                top: -21px;
+            }
+
+
+            #sawanehtitle {
+                position: relative;
+                text-align: center;
+                right: 0;
+                left: 3rem;
+                font-weight: bold;
+            }
+
+            #Sawanehfirsttitle {
+                position: relative;
+                top: 17px;
+                line-height: 28px;
+            }
+
+
+            #innerdetails tr td:first-child + td {
+                position: absolute;
+                left: 22rem;
+                display: inline-table;
+                width: 107% !important;
+            }
+
+            #userimg {
+                position: relative;
+                width: 100px !important;
+                height: 127px;
+                left: 8rem;
+                top: 29px;
+            }
+
+            td, th {
+                font-size: 12.5px !important;
+                padding: 5px;
+            }
+
+            #schoolrecords {
+                position: relative;
+                top: 1rem;
+            }
+
+            #innerdetails {
+                position: relative;
+                top: 15rem;
+            }
+
+            #Sawanehfirsttitle1 {
+                position: relative;
+                top: 34px;
+                line-height: 26px;
+            }
+
+
+
+            #maintablerow {
+                position: absolute;
+                top: 0;
+                border: 2px solid black;
+                margin: 9px;
+                height: 54rem;
+            }
+
+            #sawanehtitle {
+                position: relative;
+                text-align: center;
+                right: 0;
+                left: 3rem;
+                font-weight: bold;
+            }
+
+            #\31 2thyearmarks {
+                width: 96%;
+                margin-left: 16px;
+                top: 25px !important;
+            }
+
+            #Sawanehfirsttitle {
+                position: relative;
+                top: 72px !important;
+                line-height: 28px;
+            }
+        }
+
+        /* print css*/
+
+
+
+        .div-row, .div-row label {
+            font-size: 16px;
+        }
+
+            .div-row label {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+        .form-title {
+            border-width: 2px;
+            font-size: 11px;
+            padding-bottom: 15px;
+            color: #222;
+            border-bottom: 3px solid #222;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .col-50 {
+            width: 49% !important;
+            float: right;
+        }
+
+        .border-right {
+            border-right: 1px solid #eee;
+        }
+
+        margin-right-2 {
+            margin-right: 2px;
+        }
+
+        .div-row .eng {
+            width: 49% !important;
+            min-width: 0px;
+            font-size: 14px !important;
+            font-family: sans-serif;
+            float: left !important;
+            direction: ltr;
+        }
+
+        .eng label, .eng label {
+            float: left !important;
+            direction: ltr;
+            width: auto !important;
+        }
+
+        .div-photo {
+            margin-top: 10px;
+        }
+
+        .div-photo {
+            background: #fff;
+            box-shadow: none;
+        }
+
+        .div-mainform .title {
+            border-bottom: none !important;
+        }
+
+            .div-mainform .title .div-logo img {
+                height: 130px;
+                width: auto;
+            }
+
+            .div-mainform .title .div-logo {
+                left: 45px;
+                position: absolute;
+            }
+
+        .pull-right {
+            float: right;
+        }
+
+        .div-mainform .title .div-bottom .div-truck div span {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 11px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #000;
+            align-content: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .div-logo-right {
+            position: absolute;
+            right: 45px;
+        }
+
+        .div-logo {
+            top: 20px;
+        }
+
+        .div-logo-right {
+            position: absolute;
+            left: 45px;
+        }
+
+        .title {
+            height: 150px !important;
+            position: relative;
+        }
+
+            .title .div-text {
+                width: 50%;
+                position: relative;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+            position: relative;
+            top: -21px;
+        }
+
+        .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: top;
+            border-top: 1px solid #222
+        }
+
+        .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+            vertical-align: middle;
+        }
+
+        .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+            border: 1px solid #ddd;
+            border-top-color: rgb(221, 221, 221);
+            border-top-style: solid;
+            border-top-width: 1px;
+        }
+
+        td, th {
+            font-size: 12px !important;
+            padding: 5px;
+        }
+
+        body {
+            background: #737373;
+        }
+
+        .table > tbody {
+        }
+
+
+        .div-form {
+            background: #fff none repeat scroll 0 0;
+            border: 0 solid #aaa;
+            border-radius: 1px;
+            box-shadow: 0 0 2px #555;
+            display: block;
+            max-width: 761px;
+            min-width: 210mm;
+            position: relative;
+            width: 291mm;
+            height: 68rem;
+            min-height: 42rem;
+        }
+
+        #UserPhoto img {
+            width: 135px;
+            height: 153px;
+            position: absolute;
+            float: left;
+            left: -66rem;
+            top: 0;
+        }
+
+        #sawanehtitle {
+            position: relative;
+            text-align: center;
+            right: 0;
+            left: 3rem;
+            font-weight: bold;
+        }
+
+        #Sawanehfirsttitle {
+            position: relative;
+            top: 17px;
+            line-height: 28px;
+        }
+
+        #userimg {
+            position: relative;
+            width: 100px !important;
+            height: 127px;
+            left: 21px;
+            top: 29px;
+        }
+
+        #innerdetails tr td:first-child + td {
+            position: relative;
+            left: 28rem;
+        }
+
+        #innerdetails tr td span {
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        #maintablerow {
+            position: relative;
+            top: 0;
+            border: 2px solid black;
+            margin: 9px;
+            height: 54rem;
+        }
+
+        #register {
+            width: 98%;
+            margin: 8px;
+            top: 2rem;
+        }
+
+        #registerfirsth {
+            width: 52%;
+        }
+
+        #relativ {
+            text-align: center;
+        }
+
+            #relativ td:first-child {
+                width: 6%;
+            }
+
+                #relativ td:first-child + td {
+                    width: 22%;
+                }
+
+                    #relativ td:first-child + td + td {
+                        width: 4%;
+                    }
+
+                        #relativ td:first-child + td + td + td + td + td + td {
+                            width: 28%;
+                        }
+
+                        #relativ td:first-child + td + td + td + td + td {
+                            width: 6%;
+                        }
+
+                        #relativ td:first-child + td + td + td + td {
+                            width: 5%;
+                        }
+
+        #form\ certbackMarks {
+            position: relative;
+            left: 26.5rem;
+        }
+
+        #\31 2thyearmarks {
+            width: 96%;
+            margin-left: 16px;
+            top: -30px;
+        }
+
+        #dynamicsubject td {
+            font-size: 9px !important;
+        }
+
+        #Sawanehfirsttitle1 {
+            position: relative;
+            top: 34px;
+            line-height: 26px;
+        }
+
+        #apPhoto {
+            width: 7%;
+            height: 127px;
+            position: absolute;
+            top: 131px;
+            z-index: 1;
+            left: 19px;
+        }
+        #uxAppend {
+            width: 5%;
+            position: absolute;
+            top: 126px;
+            left: 316px;
+            direction: rtl;
+            list-style: none;
+            line-height: 1.90em;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #FUI2Part {
+            position: absolute;
+            left: 0;
+            top: 16rem;
+            list-style: none;
+            direction: rtl;
+            line-height: 1.80em;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 0 auto;
+            left: 21.5rem;
+        }
+
+        .frontUlImgSec {
+            position: absolute;
+            list-style: none;
+            direction: rtl;
+            top: 0;
+            left: 7rem;
+        }
+
+        .exp-date {
+            position: relative;
+            top: 13.2rem;
+            font-size: 13px;
+            font-weight: bold;
+            right: 10rem;
+        }
+        .img-barcode {
+            position: relative;
+            bottom: 0;
+            right: 6rem;
+            top: 12rem;
+        }
+        .BackUl {
+            position: absolute;
+            left: 10rem;
+            list-style: none;
+            direction: ltr;
+            top: 32.8rem;
+            margin: 0 auto;
+            line-height: 2em;
+        }
+    </style>
+    <script src="~/assets/js/core/libraries/jquery.min.js"></script>
+    <script src="~/assets/js/plugins/barcode/JsBarcode.all.js"></script>
+</head>
+<body style="direction:ltr;">
+
+    <form id="dv_Candidate_CandidateCard" class="form sub-form page-component" type="form" prefix="uxi" parent="dv_Candidate_Candidate" parentcol="CandidateID">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="table-responsive overflow-hidden">
+                    @foreach (var item in (List<App.Application.CandidateCard.Models.SearchPrintDataModel>)ViewData["Card"])
+                    {
+                        <div class="row">
+                            <div class="Card-Front col-md-6 offset-md-3">
+                                <div class="front-child">
+                                    <img src="~/Images/HajSystemFrontCard.jpg" width="580" class="imgFrontYellow">
+                                    <input type="hidden" value="@item.Code" id="code_print" />
+
+                                    <ul class="frontUl" id="uxAppend">
+                                        <li>@item.FirstName</li>
+                                        <li>@item.ProvinceName</li>
+                                        <li>@item.DistrictName</li>
+                                        <li>@item.FullAddress</li>
+                                      
+                                    </ul>
+                                    <ul  id="FUI2Part">
+                                        <li>@item.Mahram</li>
+                                        <li>@item.RelationshipName</li>
+                                        <li>@item.PassportNo</li>
+                                        <li>256</li>
+                                    </ul>
+                                    <ul class="frontUlImgSec">
+                                        <li class="img-pic">
+                                            <div id="apPhoto">
+                                                <img src="@item.PhotoPath" class="croppedImg" width="123">
+                                            </div>
+                                        </li>
+                                        <li class="img-blur"><img src="~/Images/OpacityLogo.png" width="60"></li>
+                                        <li class="img-barcode" align="left">
+                                            <svg id="barcode1"></svg>
+                                        </li>
+                                        <li class="exp-date">@item.IssuseYear - @item.ExpiryYear</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="Card-Back col-md-6 offset-md-3">
+                                <div class="Back-child">
+                                    <img src="~/Images/HajSystemBackCard.jpg" width="580" />
+                                    <ul class="BackUl">
+                                        <li>@item.LastNameEnglish</li>
+                                        <li>@item.FatherNameEnglish</li>
+                                        <li>@item.PassportNo</li>
+                                        <li>Afghan</li>
+                                    </ul>
+                                    <ul class="BackUlArabicSec" id="CardBack"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </form>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var Code = $('#code_print').val();
+                debugger;
+                var HajjAbb = "HAJJ";
+                JsBarcode("#barcode1", HajjAbb + "" + Code);
+               
+            });
+        </script>
+    
+
+</body>
+</html>
+

@@ -1,0 +1,166 @@
+﻿@page "{handler?}/{id?}"
+
+@model Clean.UI.Pages.Nazam.NazimAddressModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Address";
+    Layout = null;
+}
+
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">آدرس  ناظم</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+
+        <form id="dv_Nazam_Address" class="form sub-form page-component" type="form" prefix="uxs" parent="dv_Nazam_Nazim" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">@_localizer["لطفاً آدرس حاجی یا ناظم را وارد نمایید"]</legend>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer[" 1 شماره تماس"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxsphone" name="uxsPhone" type="number" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer[" شماره تماس 2"]
+                            </label>
+                            <input id="uxsmobile" name="uxsMobile" type="number" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["ایمیل آدرس"]
+                            </label>
+                            <input id="uxsemail" name="uxsEmail" onkeyup="validateEmail()" type="text"  class="form-control" />
+                        </div>
+                    </div>
+                    @*<div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["کود ولسوالی"]
+                            </label>
+                            <input id="uxsdistrictnumber" name="uxsDistrictNumber" type="number" class="form-control" />
+                        </div>
+                    </div>*@
+                </div>
+                <br />
+                <label class="text-bold" style="direction:rtl"> @_localizer[" سکونت اصلی:"]</label>
+                <br />
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["ولایت"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxscprovinceid" name="uxsCProvinceID" child="uxscdistrictid" class="select " asp-items="@Model.ListOfProvinces" required>
+                                <option></option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["ولسوالی / ناحیه"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxscdistrictid" name="uxsCDistrictID" data-type="Province" class="select " asp-items="@Model.ListOfDistricts" required>
+                                <option></option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["قریه"]
+                            </label>
+                            <input id="uxscfulladd" name="uxsCFullAdd" type="text" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <label class="text-bold" style="direction:rtl"> @_localizer["سکونت فعلی:"]</label>
+                <br />
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["ولایت"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxspprovinceid" name="uxsPProvinceID" child="uxspdistrictid" class="select " asp-items="@Model.ListOfProvinces" required>
+                                <option></option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["ولسوالی / ناحیه"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxspdistrictid" name="uxsPDistrictID" data-type="Province" class="select " asp-items="@Model.ListOfDistricts" required>
+                                <option></option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["قریه"]
+                            </label>
+                            <input id="uxspfulladd" name="uxsPFullAdd" type="text" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        @*<button type="button" onclick="print();" class="btn btn-primary pull-right mr-10" tarhanget="" >پرنت</button>*@
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table style="direction: rtl;" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="CProvinceName">ولایت فعلی</th>
+                            <th colname="CDistrictName">ولسوالی فعلی</th>
+                            <th colname="PProvinceName">ولایت دایمی</th>
+                            <th colname="PDistrictName">ولسوالی دایمی</th>
+                            <th colname="Phone">شماره تماس 1</th>
+                            <th colname="Mobile">شماره تماس 2</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+

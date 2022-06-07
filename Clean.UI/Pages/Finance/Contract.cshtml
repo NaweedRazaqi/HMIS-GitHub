@@ -1,0 +1,174 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Finance.ContractModel
+@{
+    ViewData["Title"] = "Contract";
+}
+    <div class="panel panel-flat">
+        @Html.AntiForgeryToken()
+        <div class="panel-heading">
+            <h1 class="panel-title">قرار داد</h1>
+        </div>
+        <div class="panel-body" style="padding-bottom:5px;">
+            <form id="dv_Finance_Contract" class="form main-form page-component" type="form" prefix="ux">
+                <fieldset class="content-group">
+                    <legend class="text-bold">مشخصات قرار داد را وارد کنید </legend>
+                    <input type="hidden" id="uxbid" />
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    تاریخ
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                    <input type="text" id="uxdate1" name="uxDate1" class="form-control Shamsi" sibling="uxdate" placeholder="تارخ به شمسی " required />
+                                    <input type="hidden" id="uxdate" name="uxDate" class="form-control Miladi" sibling="uxdate1" placeholder="تارخ شمسی " />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    تاریخ شروع قرار داد
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                    <input type="text" id="uxstartdate1" name="uxStartDate1" class="form-control Shamsi" sibling="uxstartdate" placeholder="تاریخ شروع قرار داد به شمسی " required />
+                                    <input type="hidden" id="uxstartdate" name="uxStartDate" class="form-control Miladi" sibling="uxstartdate1" placeholder="تارخ شمسی " />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    تاریخ ختم قرار داد
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                    <input type="text" id="uxenddate1" name="uxEndDate1" class="form-control Shamsi" sibling="uxenddate" placeholder="تاریخ ختم قرار داد به شمسی " required />
+                                    <input type="hidden" id="uxenddate" name="uxEndDate" class="form-control Miladi" sibling="uxenddate1" placeholder="تارخ شمسی " />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    نام شرکت
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <input id="uxcompanyname" name="uxCompanyName" type="text" class="form-control search" lang="ps" required />
+                                <div class="form-control-feedback">
+                                    <i class="icon-search4 text-size-base"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    موقعیت
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <select id="uxlocationid" name="uxLocationID" class="select" asp-items="@Model.ListOfLocations" required>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    منبع مصرف
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <select id="uxexpensecenterid" name="uxExpenseCenterID" class="select" asp-items="@Model.ListOfExpenseCenters" required>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    نمبر قرار داد
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <input id="uxcontractnumber" name="uxContractNumber" type="text" class="form-control search" lang="ps" required />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    مقدار قرارداد
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <input id="uxcontractamount" name="uxContractAmount" type="text" class="form-control search" lang="ps" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    جزئیات قرار داد
+                                </label>
+                                <textarea id="uxcontractdetails" name="uxContractDetails" type="text" class="form-control" lang="ps"></textarea>
+                                <div class="form-control-feedback">
+                                    <i class="icon-search4 text-size-base"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    ملاحظات
+                                </label>
+                                <textarea id="uxcomments" name="uxComments" type="text" class="form-control" lang="ps"></textarea>
+                                @*<div class="form-control-feedback">
+                                    <i class="icon-search4 text-size-base"></i>
+                                </div>*@
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <hr />
+                <div class="row div-form-control main-form-details">
+                    <div class="col-md-12">
+                        <div class="form-group actions">
+                            <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                            <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                            <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-grid main-form-details">
+                    <table bindonclick="true">
+                        <thead>
+                            <tr>
+                                <th colname="DateShamsi">تاریخ</th>
+                                <th colname="StartDateShamsi">تاریخ شروع قرار داد</th>
+                                <th colname="EndDateShamsi">تاریخ ختم قرار داد</th>
+                                <th colname="ContractAmount">مقدار قرار داد</th>
+                                <th colname="ContractNumber">نمبر قرار داد</th>
+                                <th colname="CompanyName">نام شرکت</th>
+                                <th colname="LocationName">موقعیت</th>
+                                <th colname="ExpenseCenterName">منبع مصرف</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="page-sidebar page-component" type="actionmenu">
+            <ul class="navigation navigation-accordion">
+                @Html.Raw(@Model.SubScreens)
+            </ul>
+        </div>
+    </div>

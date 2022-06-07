@@ -1,0 +1,69 @@
+C:\Users\ZIA\source\repos\Passport\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+C:\Users\ZIA\source\repos\Passport\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\ZIA\source\repos\Passport\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csprojAssemblyReference.cache
+C:\Users\ZIA\source\repos\Passport\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csproj.CoreCompileInputs.cache
+C:\Users\ZIA\source\repos\Passport\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+C:\Users\ZIA\source\repos\Passport\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+C:\Users\ZIA\source\repos\Passport\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\ZIA\source\repos\Passport\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb
+F:\NSIA Systems\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+F:\NSIA Systems\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+F:\NSIA Systems\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+F:\NSIA Systems\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csprojAssemblyReference.cache
+F:\NSIA Systems\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+F:\NSIA Systems\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+F:\NSIA Systems\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csproj.CoreCompileInputs.cache
+F:\NSIA Systems\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+F:\NSIA Systems\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csprojAssemblyReference.cache
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csproj.CoreCompileInputs.cache
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\NSIA\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb
+D:\Projects\Hajj\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+D:\Projects\Hajj\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+D:\Projects\Hajj\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+D:\Projects\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csprojAssemblyReference.cache
+D:\Projects\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+D:\Projects\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+D:\Projects\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csproj.CoreCompileInputs.cache
+D:\Projects\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+D:\Projects\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\H_afzali\Desktop\Hajj\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csprojAssemblyReference.cache
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\H_afzali\Desktop\New Hajj\Updated HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\Administrator\Desktop\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.deps.json
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\bin\Release\netcoreapp3.1\Clean.Common.pdb
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.dll
+C:\Users\Administrator\Desktop\Haj MIS\HMIS\Clean.Common\obj\Release\netcoreapp3.1\Clean.Common.pdb

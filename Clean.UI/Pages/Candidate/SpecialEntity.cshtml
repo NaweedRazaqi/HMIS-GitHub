@@ -1,0 +1,173 @@
+﻿@page "{handler?}/{id?}"
+@model Clean.UI.Pages.Candidate.SpecialEntityModel
+@{
+    ViewData["Title"] = "SpecialEntity";
+    Layout = null;
+}
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h1 class="panel-title">سهمیه استثنایی</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Candidate_SpecialEntity" class="form sub-form page-component" type="form" prefix="ux" parent="dv_Candidate_Candidate" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">مشخصات سهمیه استثنایی را وارد کنید </legend>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                شماره سفارش
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxordernumber" name="uxOrderNumber" type="number" class="form-control search" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نوعیت سهمیه استثنایی
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxspecialentitytypeid" name="uxSpecialEntityTypeID" child="uxorganizationid" class="select" asp-items="@Model.ListOfSpecialEntityType" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                اداره
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxorganizationid" name="uxOrganizationId" class="select" data-type="SET" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                سال
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxyearid" name="uxYearId" class="select" asp-items="@Model.ListOfPersianYears" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="organame" style="display:none">
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    نام شورا
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <input id="uxshoraname" name="uxShoraName" type="text" class="form-control search"  />
+                            </div>
+                        </div>
+                    </div> 
+                    <div id="province" style="display:none">
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    نام ولایت
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <input id="uxdepartmentname" name="uxDepartmentName" type="text" class="form-control search"  />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر مکتوب
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxmaktubnumber" name="uxMaktubNumber" type="number" class="form-control search" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                مرجع معرفی کننده
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxrefrence" name="uxRefrence" type="text" class="form-control search" required />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ
+                                <span class="text-danger">*</span>
+                            </label>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxdatess" name="uxDatess" class="form-control Shamsi" sibling="uxdate" placeholder=" " />
+                                <input type="hidden" id="uxdate" name="uxDate" class="form-control Miladi" sibling="uxdatess" placeholder="تارخ  شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ملاحظات
+                            </label>
+                            <textarea id="uxdiscription" name="uxDiscription" type="text" class="form-control" lang="en"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i> ثبت معلومات </button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true" filter="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام متقاضی</th>
+                            <th colname="OrderNumber"> شماره سفارش </th>
+                            <th colname="YearName"> سال </th>
+                            <th colname="SpecialEntityTypeName">  نوعیت </th>
+                            <th colname="OrganizationName">  نام نهاد  </th>
+                            <th colname="Refrence">  مرجع معرفی کننده  </th>
+                            <th colname="MaktubNumber">  نمبر مکتوب  </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $('#uxorganizationid').change(function () {
+    if ($(this).val() == "48") {
+        $('#organame').show();
+
+    }
+    else
+        $('#organame').hide();
+});
+
+$('#uxorganizationid').change(function () {
+    if ($(this).val() == "35") {
+        $('#province').show();
+    }
+    else
+        $('#province').hide();
+});
+</script>

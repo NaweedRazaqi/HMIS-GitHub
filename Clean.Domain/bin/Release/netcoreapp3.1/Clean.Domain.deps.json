@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Clean.Domain/1.0.0": {
+        "dependencies": {
+          "Syncfusion.EJ2.AspNet.Core": "19.1.0.58"
+        },
+        "runtime": {
+          "Clean.Domain.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "Syncfusion.EJ2.AspNet.Core/19.1.0.58": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Syncfusion.Licensing": "19.1.0.58"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Syncfusion.EJ2.dll": {
+            "assemblyVersion": "19.1.0.58",
+            "fileVersion": "19.1.0.58"
+          }
+        }
+      },
+      "Syncfusion.Licensing/19.1.0.58": {
+        "runtime": {
+          "lib/netcoreapp3.1/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.1.0.58",
+            "fileVersion": "19.1.0.58"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Clean.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "Syncfusion.EJ2.AspNet.Core/19.1.0.58": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zAFi4rnMOyimM09zrD0FcsawU1unyTU9lHgL/5eFEr04nXSXJ97/YdO8VuWjqZMzfhecHRpQXwH0JgFc+dJIEw==",
+      "path": "syncfusion.ej2.aspnet.core/19.1.0.58",
+      "hashPath": "syncfusion.ej2.aspnet.core.19.1.0.58.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.1.0.58": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GnNbMdbrupvjQ/5ZxWc5zL1oW7FI6KrzAogcMn+wrmKgP8zvE854dWNoGOYhoYtKiDeEuJeBq4No3f4+rFdJWA==",
+      "path": "syncfusion.licensing/19.1.0.58",
+      "hashPath": "syncfusion.licensing.19.1.0.58.nupkg.sha512"
+    }
+  }
+}

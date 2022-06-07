@@ -1,0 +1,78 @@
+﻿@page "{handler?}"
+@model Clean.UI.Pages.Mosque.MosqueModel
+@{
+    ViewData["Title"] = "Mosque";
+}
+<div class="panel panel-flat">
+    @Html.AntiForgeryToken()
+    <div class="panel-heading">
+        <h1 class="panel-title">مسجد</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+        <form id="dv_Mosque_Mosque" class="form main-form page-component" type="form" prefix="ux">
+            <fieldset class="content-group">
+                <legend class="text-bold">مشخصات مسجد را وارد کنید </legend>
+                <input type="hidden" id="uxbid" />
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نام
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxname" name="uxName" type="text" class="form-control search" lang="ps" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ولایت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxprovinceid" name="uxProvinceID" child="uxdistrictid" class="select search" asp-items="@Model.ListOfProvinces" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                ولسوالی / ناحیه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxdistrictid" name="uxDistrictID" data-type="Province" class="select search" asp-items="@Model.ListOfDistricts" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control main-form-details">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-search4 position-left"></i> جستجو  </button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i> صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid main-form-details">
+                <table bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="Name">تاریخ</th>
+                            <th colname="ProvinceName">ولایت</th>
+                            <th colname="DistrictName">ولسوالی</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </form>
+    </div>
+</div>

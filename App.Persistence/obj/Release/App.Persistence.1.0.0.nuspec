@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>App.Persistence</id>
+    <version>1.0.0</version>
+    <authors>App.Persistence</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="App.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Clean.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Clean.Persistence" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authorization" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Abstractions" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational.Design" version="1.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Console" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="Npgsql.EntityFrameworkCore.PostgreSQL" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="Npgsql.EntityFrameworkCore.PostgreSQL.Design" version="1.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="F:\NSIA Systems\HMIS\App.Persistence\bin\Release\netcoreapp3.1\App.Persistence.runtimeconfig.json" target="lib\netcoreapp3.1\App.Persistence.runtimeconfig.json" />
+    <file src="F:\NSIA Systems\HMIS\App.Persistence\bin\Release\netcoreapp3.1\App.Persistence.dll" target="lib\netcoreapp3.1\App.Persistence.dll" />
+  </files>
+</package>

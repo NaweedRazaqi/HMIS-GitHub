@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+OYKzWYYBqUVLBjp3t+JzE32urV4N5WrWZsJF2wBMz6MSGmUeD1a/3GiIh9+Hf1mwYgVpt5XhO0fsqRhQ5COJQ==",
+  "success": true,
+  "projectFilePath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.ej2.aspnet.core\\19.1.0.58\\syncfusion.ej2.aspnet.core.19.1.0.58.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.licensing\\19.1.0.58\\syncfusion.licensing.19.1.0.58.nupkg.sha512"
+  ],
+  "logs": []
+}
