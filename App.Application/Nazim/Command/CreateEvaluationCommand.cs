@@ -18,6 +18,7 @@ namespace App.Application.Nazim.Command
         public int? Evid { get; set; }
         public int? ResultId { get; set; }
         public int? ZoneId { get; set; }
+        public int? EvCreteriaId { get; set; }
     }
     public class CreateEvaluationCommandHandler : IRequestHandler<CreateEvaluationCommand, List<EvcategoryModel>>
     {
@@ -45,6 +46,7 @@ namespace App.Application.Nazim.Command
             ed.Nid = request.Nid;
             ed.ResultId = request.ResultId;
             ed.ZoneId = request.ZoneId;
+            ed.EvCreteriaId = request.EvCreteriaId;
             if (request.Id == 0)
             {
                 ed.ModifiedBy = "";

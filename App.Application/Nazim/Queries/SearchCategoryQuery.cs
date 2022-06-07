@@ -48,7 +48,8 @@ namespace App.Application.Nazim.Queries
                 Nid = p.Nid,
                 ResultId = p.ResultId,
                 result=p.Result.Name,
-                ZoneId=p.ZoneId
+                ZoneId=p.ZoneId,
+                EvCreteriaId = p.EvCreteriaId
         }).ToListAsync();
         }
     }
