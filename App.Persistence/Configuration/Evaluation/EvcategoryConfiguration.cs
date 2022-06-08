@@ -23,7 +23,7 @@ namespace App.Persistence.Configuration.Evaluation
             entity.Property(e => e.ZoneId).HasColumnName("ZoneID");
 
             entity.HasOne(d => d.Zone)
-                .WithMany(p => p.Evcategory)
+                .WithMany()
                 .HasForeignKey(d => d.ZoneId)
                 .HasConstraintName("FK_categor_Zone");
         }

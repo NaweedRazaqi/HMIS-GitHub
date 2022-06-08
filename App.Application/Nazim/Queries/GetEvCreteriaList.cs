@@ -16,7 +16,7 @@ namespace App.Application.Nazim.Queries
     public class GetEvCreteriaList : IRequest<IEnumerable<EvCreteriaSearchModel>>
     {
         public int Id { get; set; }
-        public int? EvZoneTypeId { get; set; }
+        public int EvZoneTypeId { get; set; }
     }
 
     public class GetEvCreteriaListHandler : IRequestHandler<GetEvCreteriaList, IEnumerable<EvCreteriaSearchModel>>

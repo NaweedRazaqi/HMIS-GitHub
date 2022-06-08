@@ -10,9 +10,6 @@ namespace App.Persistence.Configuration.Doc
         {
             entity.ToTable("NERecords", "NE");
 
-            entity.HasIndex(e => e.Evid)
-                .HasName("fki_FK_record_category");
-
             entity.HasIndex(e => e.Nid)
                 .HasName("fki_FK_NER_Nazim");
 
@@ -27,8 +24,6 @@ namespace App.Persistence.Configuration.Doc
             entity.Property(e => e.CreatedOn).HasColumnName("CreatedON");
 
             entity.Property(e => e.EvCreteriaId).HasColumnName("EvCreteriaID");
-
-            entity.Property(e => e.Evid).HasColumnName("EVID");
 
             entity.Property(e => e.ModifiedBy).HasColumnType("character varying");
 
@@ -45,10 +40,6 @@ namespace App.Persistence.Configuration.Doc
                 .HasForeignKey(d => d.EvCreteriaId)
                 .HasConstraintName("FK_EvCreteriaID");
 
-            entity.HasOne(d => d.Ev)
-                .WithMany(p => p.Nerecords)
-                .HasForeignKey(d => d.Evid)
-                .HasConstraintName("FK_record_category");
 
             entity.HasOne(d => d.N)
                 .WithMany(p => p.Nerecords)

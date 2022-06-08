@@ -15,7 +15,6 @@ namespace App.Application.Nazim.Command
     {
         public int Id { get; set; }
         public int? Nid { get; set; }
-        public int? Evid { get; set; }
         public int? ResultId { get; set; }
         public int? ZoneId { get; set; }
         public int? EvCreteriaId { get; set; }
@@ -42,7 +41,6 @@ namespace App.Application.Nazim.Command
             int CurrentUserId = await currentUser.GetUserId();
             
             ed.Id = request.Id;
-            ed.Evid = request.Evid;
             ed.Nid = request.Nid;
             ed.ResultId = request.ResultId;
             ed.ZoneId = request.ZoneId;

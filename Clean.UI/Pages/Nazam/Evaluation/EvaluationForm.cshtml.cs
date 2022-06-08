@@ -98,7 +98,7 @@ namespace Clean.UI.Pages.Nazam.Evaluation.EvaluationForm
                 List<object> SearchResult = new List<object>();
                 var evcreteria = await Mediator.Send(new GetEvCreteriaList() { EvZoneTypeId = Data.ID });
                 foreach (var e in evcreteria)
-                    SearchResult.Add(new { Id = e.EvZoneTypeId, text = e.Name });
+                    SearchResult.Add(new { Id = e.Id, text = e.Name });
 
                 return new JsonResult(new UIResult()
                 {

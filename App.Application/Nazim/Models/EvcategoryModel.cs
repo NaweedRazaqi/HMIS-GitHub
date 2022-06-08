@@ -16,6 +16,7 @@ namespace App.Application.Nazim.Models
         public int? ResultId { get; set; }
         public int? ZoneId { get; set; }
         public int? EvCreteriaId { get; set; }
+        public string? evCreteriaText { get; set; }
         public int? CreatedBy { get; set; }
         public DateTime? CreatedOn { get; set; }
         public DateTime? ModifiedOn { get; set; }
