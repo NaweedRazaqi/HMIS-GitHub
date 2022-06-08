@@ -5,9 +5,12 @@ using App.Application.Lookup.Queries;
 using App.Application.Nazim.Command;
 using App.Application.Nazim.Models;
 using App.Application.Nazim.Queries;
+using Clean.Common.Models;
 using Clean.UI.Types;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Syncfusion.EJ2.Linq;
+
 namespace Clean.UI.Pages.Nazam.Evaluation.EvaluationForm
 {
     public class EvaluationFormModel : BasePage
@@ -30,6 +33,9 @@ namespace Clean.UI.Pages.Nazam.Evaluation.EvaluationForm
             var locations = await Mediator.Send(new GetZoneQuery());
             locations.ForEach(location => Zones.Add(new SelectListItem { Value = location.Id.ToString(), Text = location.Name }));
 
+            ListCreteria = new List<SelectListItem>();
+            var creteria = await Mediator.Send(new GetEvCreteriaList());
+            creteria.ForEach(creteria => ListCreteria.Add(new SelectListItem { Value = creteria.Id.ToString(), Text = creteria.Name }));
         }
         public async Task<IActionResult> OnPostSave([FromBody] CreateEvaluationCommand command)
         {
@@ -78,6 +84,34 @@ namespace Clean.UI.Pages.Nazam.Evaluation.EvaluationForm
                     Description = ex.Message + " \n StackTrace : " + ex.StackTrace,
                     Data = null
                 };
+            }
+            return result;
+        }
+
+
+
+        public async Task<IActionResult> OnPostEvCreteria([FromBody] DynamicListModel Data)
+        {
+            var result = new JsonResult(null);
+            try
+            {
+                List<object> SearchResult = new List<object>();
+                var evcreteria = await Mediator.Send(new GetEvCreteriaList() { EvZoneTypeId = Data.ID });
+                foreach (var e in evcreteria)
+                    SearchResult.Add(new { Id = e.EvZoneTypeId, text = e.Name });
+
+                return new JsonResult(new UIResult()
+                {
+                    Data = new { list = SearchResult },
+                    Status = UIStatus.Success,
+                    Text = "",
+                    Description = string.Empty
+                });
+
+            }
+            catch (Exception ex)
+            {
+                result = new JsonResult(CustomMessages.FabricateException(ex));
             }
             return result;
         }

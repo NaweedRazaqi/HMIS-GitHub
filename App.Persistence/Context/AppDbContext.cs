@@ -31,6 +31,7 @@ namespace App.Persistence.Context
         public virtual DbSet<Occupation> Occupations { get; set; }
         public virtual DbSet<Education> Educations { get; set; }
         public virtual DbSet<Nerecords> Nerecords { get; set; }
+        public virtual DbSet<EvCreteria> EvCreterias { get; set; }
         public virtual DbSet<NazemExperience> NazemExperiences { get; set; }
         public virtual DbSet<Evzone> Evzones { get; set; }
         public virtual DbSet<Evcategory> Evcategories { get; set; }

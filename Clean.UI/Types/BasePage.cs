@@ -67,6 +67,7 @@ namespace Clean.UI.Types
         public List<SelectListItem> Marks { get; set; }
         public List<SelectListItem> Category { get; set; }
         public List<SelectListItem> Zones { get; set; }
+        public List<SelectListItem> ListCreteria { get; set; }
         public List<SelectListItem> ListOfStudyField { get; set; }
         public List<SelectListItem> ListOfLocations { get; set; }
         public List<SelectListItem> ListOfUniversities { get; set; }

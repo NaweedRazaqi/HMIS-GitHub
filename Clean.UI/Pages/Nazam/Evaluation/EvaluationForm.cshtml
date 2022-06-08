@@ -21,7 +21,7 @@
                                 @_localizer["محل ناظم"]
                                 <span class="text-danger">&nbsp;*</span>
                             </label>
-                            <select id="uxnzoneid" name="uxnZoneId" class="select" asp-items="@Model.Zones" required>
+                            <select id="uxnzoneid" name="uxnZoneId" child="uxnevcreteriaid"class="select" asp-items="@Model.Zones" required>
                                 <option></option>
                             </select>
                         </div>
@@ -32,7 +32,7 @@
                                 @_localizer["مشخصه ارزیابی"]
                                 <span class="text-danger">&nbsp;*</span>
                             </label>
-                            <select id="uxnevid" name="uxnEvid" class="select" asp-items="@Model.Category" required>
+                            <select id="uxnevcreteriaid" name="uxnEvCreteriaId" data-type="EvCreteria" class="select" asp-items="@Model.ListCreteria" required>
                                 <option></option>
                             </select>
                         </div>
@@ -43,7 +43,7 @@
                                 @_localizer["نتجه"]
                                 <span class="text-danger">&nbsp;*</span>
                             </label>
-                            <select id="uxnmarkid" name="uxnMarkId" class="select" asp-items="@Model.Marks" required>
+                            <select id="uxnresultid" name="uxnResultId" class="select" asp-items="@Model.Marks" required>
                                 <option></option>
                             </select>
                         </div>
