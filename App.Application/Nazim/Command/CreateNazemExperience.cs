@@ -1,6 +1,7 @@
 ﻿using App.Application.Nazim.Models;
 using App.Application.Nazim.Queries;
 using App.Persistence.Context;
+using Clean.Common.Exceptions;
 using Clean.Persistence.Services;
 using MediatR;
 using System;
@@ -43,6 +44,13 @@ namespace App.Application.Nazim.Command
             var ed = request.Id != 0 ? context.NazemExperiences.Where(e => e.Id == request.Id).Single() : new Domain.Entity.prf.NazemExperience();
             int CurrentUserId = await currentUser.GetUserId();
 
+
+            var isemployed = context.Candidates.Where(c => c.Id == request.CandidateId && c.CandidateTypeId == 2).Select(se => se.IsEmployed).SingleOrDefault();
+
+            if (isemployed == false || isemployed == null)
+            {
+                throw new BusinessRulesException("شخص مذکور واجد شرایط برای ثبت تجربه نمیباشد نمیباشد!");
+            }
             ed.CandidateId = request.CandidateId;
             ed.PrevouseHajCount = request.PrevouseHajCount;
             ed.YearId = request.YearId;

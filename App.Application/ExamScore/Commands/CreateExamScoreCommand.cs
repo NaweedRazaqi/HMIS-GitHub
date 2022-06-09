@@ -41,6 +41,8 @@ namespace App.Application.ExamScore.Commands
         }
         public async Task<List<SearchExamScoreModel>> Handle(CreateExamScoreCommand request, CancellationToken cancellationToken)
         {
+
+
             if(request.OralExamScore == null || request.WrittenExamScore == null)
             {
                 throw new BusinessRulesException("لطفا نمره تحریری و تقری ناظم را درج نمایید.");
