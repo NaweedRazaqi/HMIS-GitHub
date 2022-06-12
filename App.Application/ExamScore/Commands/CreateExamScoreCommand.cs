@@ -72,7 +72,7 @@ namespace App.Application.ExamScore.Commands
             ExamScore.WrittenExamScore = request.WrittenExamScore;
             ExamScore.TotalMarks = (int)totalscore;
 
-
+             
             if (request.Id == 0)
             {
                 ExamScore.ModifiedBy = "";

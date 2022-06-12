@@ -3107,3 +3107,4 @@ D:\HMIS\Haj MIS\HMIS\Clean.UI\obj\Debug\netcoreapp3.1\Clean.UI.pdb
 D:\HMIS\Haj MIS\HMIS\Clean.UI\obj\Debug\netcoreapp3.1\Clean.UI.genruntimeconfig.cache
 D:\HMIS\Haj MIS\HMIS\Clean.UI\obj\Debug\netcoreapp3.1\Razor\Pages\Nazam\NazamToMosque.cshtml.g.cs
 D:\HMIS\Haj MIS\HMIS\Clean.UI\obj\Debug\netcoreapp3.1\Razor\Pages\Nazam\NazemExperience.cshtml.g.cs
+D:\HMIS\Haj MIS\HMIS\Clean.UI\obj\Debug\netcoreapp3.1\Razor\Pages\Report\VisaReport.cshtml.g.cs
