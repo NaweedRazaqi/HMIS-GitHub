@@ -2,7 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using App.Application.Candidate.Models;
 using App.Application.Lookup.Queries;
+using App.Application.Report.Models;
+using App.Application.Report.Queries;
 using Clean.Application.System.Queries;
 using Clean.UI.Types;
 using Clean.UI.Utilities;
@@ -46,6 +49,40 @@ namespace Clean.UI.Pages.Report
             {
 
             }
+        }
+
+
+
+        public async Task<IActionResult> OnPostSearch([FromBody] GetVisaReport query)
+        {
+            var result = new JsonResult(null);
+            try
+            {
+
+                IEnumerable<SearchVisaInfoReportModel> SaveResult = new List<SearchVisaInfoReportModel>();
+
+                SaveResult = await Mediator.Send(query);
+
+                return new JsonResult(new UIResult()
+                {
+                    Data = new { list = SaveResult },
+                    Status = UIStatus.Success,
+                    Text = "",
+                    Description = string.Empty
+                });
+
+            }
+            catch (Exception ex)
+            {
+                result.Value = new UIResult
+                {
+                    Status = UIStatus.Failure,
+                    Text = CustomMessages.InternalSystemException,
+                    Description = ex.Message + " \n StackTrace : " + ex.StackTrace,
+                    Data = null
+                };
+            }
+            return result;
         }
     }
 }
