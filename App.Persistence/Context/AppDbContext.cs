@@ -68,6 +68,7 @@ namespace App.Persistence.Context
         public virtual DbSet<Relative> Relatives{ get; set; }
         public virtual DbSet<SpecialEntityType> SpecialEntityTypes{ get; set; }
         public virtual DbSet<Installment> Installments{ get; set; }
+        public virtual DbSet<HajjYearlyFee> HajjYearlyFees{ get; set; }
         public virtual DbSet<Installments> view{ get; set; }
         public virtual DbSet<Bank> Banks{ get; set; }
         public virtual DbSet<Rank> Ranks{ get; set; }

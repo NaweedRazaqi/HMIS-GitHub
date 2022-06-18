@@ -108,3 +108,12 @@ D:\HMIS\Haj MIS\HMIS\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.AssemblyI
 D:\HMIS\Haj MIS\HMIS\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.csproj.CoreCompileInputs.cache
 D:\HMIS\Haj MIS\HMIS\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.dll
 D:\HMIS\Haj MIS\HMIS\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.deps.json
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.csprojAssemblyReference.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.AssemblyInfoInputs.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.AssemblyInfo.cs
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.csproj.CoreCompileInputs.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Domain\obj\Debug\netcoreapp3.1\Clean.Domain.pdb

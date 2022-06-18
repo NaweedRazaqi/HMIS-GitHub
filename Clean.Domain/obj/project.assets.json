@@ -123,11 +123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj",
+      "projectUniqueName": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\Clean.Domain.csproj",
       "projectName": "Clean.Domain",
-      "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj",
+      "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\Clean.Domain.csproj",
       "packagesPath": "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\",
-      "outputPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\obj\\",
+      "outputPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

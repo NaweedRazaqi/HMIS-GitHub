@@ -12,6 +12,7 @@ namespace Clean.UI.ssModel
             DailyExpense = new HashSet<DailyExpense>();
             Emara = new HashSet<Emara>();
             HajjYear = new HashSet<HajjYear>();
+            HajjYearlyFee = new HashSet<HajjYearlyFee>();
             HajjiAdditionToEmara = new HashSet<HajjiAdditionToEmara>();
             HajyearlyCapacity = new HashSet<HajyearlyCapacity>();
             MoneyBack = new HashSet<MoneyBack>();
@@ -31,6 +32,7 @@ namespace Clean.UI.ssModel
         public virtual ICollection<DailyExpense> DailyExpense { get; set; }
         public virtual ICollection<Emara> Emara { get; set; }
         public virtual ICollection<HajjYear> HajjYear { get; set; }
+        public virtual ICollection<HajjYearlyFee> HajjYearlyFee { get; set; }
         public virtual ICollection<HajjiAdditionToEmara> HajjiAdditionToEmara { get; set; }
         public virtual ICollection<HajyearlyCapacity> HajyearlyCapacity { get; set; }
         public virtual ICollection<MoneyBack> MoneyBack { get; set; }

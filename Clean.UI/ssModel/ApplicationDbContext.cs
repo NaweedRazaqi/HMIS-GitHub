@@ -72,6 +72,7 @@ namespace Clean.UI.ssModel
         public virtual DbSet<Gender> Gender { get; set; }
         public virtual DbSet<HajiStatus> HajiStatus { get; set; }
         public virtual DbSet<HajjYear> HajjYear { get; set; }
+        public virtual DbSet<HajjYearlyFee> HajjYearlyFee { get; set; }
         public virtual DbSet<HajjiAdditionToEmara> HajjiAdditionToEmara { get; set; }
         public virtual DbSet<HajjiSelection> HajjiSelection { get; set; }
         public virtual DbSet<HajjprocessStatus> HajjprocessStatus { get; set; }
@@ -1379,6 +1380,22 @@ namespace Clean.UI.ssModel
                     .OnDelete(DeleteBehavior.ClientSetNull);
             });
 
+            modelBuilder.Entity<HajjYearlyFee>(entity =>
+            {
+                entity.ToTable("HajjYearlyFee", "look");
+
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.Fee).HasColumnType("numeric");
+
+                entity.Property(e => e.YearId).HasColumnName("YearID");
+
+                entity.HasOne(d => d.Year)
+                    .WithMany(p => p.HajjYearlyFee)
+                    .HasForeignKey(d => d.YearId)
+                    .HasConstraintName("YearID_FK");
+            });
+
             modelBuilder.Entity<HajjiAdditionToEmara>(entity =>
             {
                 entity.ToTable("HajjiAdditionToEmara", "prf");
@@ -2074,9 +2091,6 @@ namespace Clean.UI.ssModel
             {
                 entity.ToTable("NERecords", "NE");
 
-                entity.HasIndex(e => e.Evid)
-                    .HasName("fki_FK_record_category");
-
                 entity.HasIndex(e => e.Nid)
                     .HasName("fki_FK_NER_Nazim");
 
@@ -2092,8 +2106,6 @@ namespace Clean.UI.ssModel
 
                 entity.Property(e => e.EvCreteriaId).HasColumnName("EvCreteriaID");
 
-                entity.Property(e => e.Evid).HasColumnName("EVID");
-
                 entity.Property(e => e.ModifiedBy).HasColumnType("character varying");
 
                 entity.Property(e => e.ModifiedOn).HasColumnName("ModifiedON");
@@ -2108,11 +2120,6 @@ namespace Clean.UI.ssModel
                     .WithMany(p => p.Nerecords)
                     .HasForeignKey(d => d.EvCreteriaId)
                     .HasConstraintName("FK_EvCreteriaID");
-
-                entity.HasOne(d => d.Ev)
-                    .WithMany(p => p.Nerecords)
-                    .HasForeignKey(d => d.Evid)
-                    .HasConstraintName("FK_record_category");
 
                 entity.HasOne(d => d.N)
                     .WithMany(p => p.Nerecords)

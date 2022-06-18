@@ -1,0 +1,281 @@
+﻿@page "{handler?}/{id?}"
+
+@model Clean.UI.Pages.Candidate.Installments.InstallmentModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@{
+    ViewData["Title"] = "Installment";
+    Layout = null;
+}
+<div class="panel panel-flat" style="direction: rtl;">
+    <div class="panel-heading">
+        <h1 class="panel-title">ثبت تعرفه</h1>
+    </div>
+    <div class="panel-body" style="padding-bottom:5px;">
+
+        <form id="dv_Candidate_Installments_Installment" class="form sub-form page-component" type="form" prefix="uxi" parent="dv_Candidate_Candidate" parentcol="CandidateID">
+            <fieldset class="content-group">
+                <legend class="text-bold">لطفاً تعرفه بانک را وارد نمایید</legend>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                شماره تعرفه
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxiinstallmentno" name="uxiInstallmentNo" type="number" class="form-control search" required />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                بانک
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxibankid" name="uxiBankId" class="select" asp-items="@Model.ListOfBanks" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نمبر اویز
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxirecipetno" name="uxiRecipetNo" type="number" class="form-control search" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                واحد پولی
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxicurrencyid" name="uxiCurrencyID" class="select" asp-items="@Model.ListOfCurrency" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label class="text-bold">
+                                نوعیت قسط
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxiinstallmenttypeid" name="uxiInstallmentTypeID" class="select" asp-items="@Model.ListOfInstallmentType" required>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                مقدار پرداخت
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxiamount" name="uxiAmount" type="text" class="form-control search" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                نرخ یک دالر به افغانی
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxicurrencyrate" name="uxiCurrencyRate" type="number" class="form-control search" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="installmenttype" style="display:none">
+                        <div class="col-md-3 col-sm-12 col-xs-12 ">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="text-bold">
+                                    شماره احصائیه
+                                    <span class="text-danger">&nbsp;*</span>
+                                </label>
+                                <input id="uxicode" name="uxiCode" type="number" class="form-control search" />
+                                <div class="form-control-feedback">
+                                    <i class="icon-search4 text-size-base"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                تاریخ صدور تعرفه
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" id="uxidate1" name="uxiDate1" class="form-control Shamsi" sibling="uxidate" placeholder="تارخ پرداخت به شمسی " required />
+                                <input type="hidden" id="uxidate" name="uxiDate" class="form-control Miladi" sibling="uxidate1" placeholder="تارخ  شمسی " />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="second" style="display:none">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label class="text-bold">
+                                    @_localizer["شامل تخفیف است؟"]
+                                </label>
+                                <select id="uxidiscountid" name="uxiDiscountID" asp-items="@Model.ListOfTicketDiscount" class="select">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        @*<div class="col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label class="text-bold">
+                                        @_localizer["امر فوق العاده است؟"]
+                                    </label>
+                                    <select id="uxiorderid" name="uxiOrderID" type="number" asp-items="@Model.ListOfOrders" lang="en" class="select">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>*@
+                    </div>
+                </div>
+                <div id="usifordiscount" style="display:none;">
+                    <div class="col-md-3 col-sm-12 col-xs-12 " style="position:relative;left:12px">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["فیصدی تخفیف"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxiamountofdiscount" name="uxiAmountofdiscount" type="number" class="form-control" lang="en" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fororder" style="display:none">
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["شماره امر"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <input id="uxiordernumber" name="uxiOrderNumber" type="number" class="form-control" lang="en" />
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-size-base"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["امر مقام"]
+                                <span class="text-danger">&nbsp;*</span>
+                            </label>
+                            <select id="uxiordererid" name="uxiuxiOrdererID" asp-items="@Model.ListOfTicketorder" type="number" lang="en" class="select">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="form-group has-feedback has-feedback-left">
+                            <label class="text-bold">
+                                @_localizer["ملاحظات "]
+                            </label>
+                            <textarea id="uxiremarks" name="uxiRemarks" type="text" class="form-control" lang="en"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <div class="row div-form-control">
+                <div class="col-md-12">
+                    <div class="form-group actions">
+                        <button type="button" class="btn btn-primary" action="save"><i class="icon-floppy-disk position-left"></i>ثبت معلومات</button>
+                        <button type="button" class="btn btn-primary" action="search"><i class="icon-new-tab position-left"></i>جستجو</button>
+                        <button type="button" onclick="Print();" class="btn btn-primary pull-right mr-10" action="print">پرنت</button>
+                        <button type="button" class="btn btn-primary" action="new"><i class="icon-new-tab position-left"></i>صفحه جدید </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-grid">
+                <table style="direction: rtl;" bindonclick="true">
+                    <thead>
+                        <tr>
+                            <th colname="CandidateName">نام کاندید</th>
+                            <th colname="BankName">بانک</th>
+                            <th colname="Amount">مقدار پرداخت</th>
+                            <th colname="Amount2">مقدار پرداخت</th>
+                            <th colname="CurrencyName">واحد پولی</th>
+                            <th colname="CurrencyRate">نرخ دالر به افغانی</th>
+                            <th colname="InstallmentTypeName">نوعیت قسط</th>
+                            <th colname="Discount">تخفیف</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $('#uxidiscountid').change(function () {
+        if ($(this).val() == "1") {
+            $('#usifordiscount').show();
+
+        }
+        else
+            $('#usifordiscount').hide();
+    });
+
+    //$('#uxiorderid').change(function () {
+    //    if ($(this).val() == "1") {
+    //        $('#fororder').show();
+    //    }
+    //    else {
+    //        $('#fororder').hide();
+    //    }
+    //});
+
+    $('#uxiinstallmenttypeid').change(function () {
+        if ($(this).val() == "2") {
+            $('#second').show();
+
+        }
+        else
+            $('#second').hide();
+    });
+    $('#uxiinstallmenttypeid').change(function () {
+        if ($(this).val() == "1") {
+            $('#uxiamount').val('500');
+
+        }
+    });
+    $('#uxiinstallmenttypeid').change(function () {
+        if ($(this).val() == "2" || $(this).val()=="3" ) {
+            $('#installmenttype').show();
+
+        }
+        else
+            $('#installmenttype').hide();
+    });
+    
+
+</script>

@@ -254,3 +254,23 @@ D:\HMIS\Haj MIS\HMIS\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application
 D:\HMIS\Haj MIS\HMIS\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.csproj.CopyComplete
 D:\HMIS\Haj MIS\HMIS\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.dll
 D:\HMIS\Haj MIS\HMIS\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Application.deps.json
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Application.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Application.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\App.Domain.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\App.Persistence.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Common.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Persistence.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\App.Persistence.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Persistence.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\App.Domain.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Common.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.csprojAssemblyReference.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.AssemblyInfoInputs.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.AssemblyInfo.cs
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.csproj.CoreCompileInputs.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.csproj.CopyComplete
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Application\obj\Debug\netcoreapp3.1\Clean.Application.pdb

@@ -6053,11 +6053,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Application\\Clean.Application.csproj",
+      "projectUniqueName": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Application\\Clean.Application.csproj",
       "projectName": "Clean.Application",
-      "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Application\\Clean.Application.csproj",
+      "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Application\\Clean.Application.csproj",
       "packagesPath": "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\",
-      "outputPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Application\\obj\\",
+      "outputPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6077,11 +6077,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\HMIS\\Haj MIS\\HMIS\\App.Persistence\\App.Persistence.csproj": {
-              "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Persistence\\App.Persistence.csproj"
+            "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Persistence\\App.Persistence.csproj": {
+              "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Persistence\\App.Persistence.csproj"
             },
-            "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Persistence\\Clean.Persistence.csproj": {
-              "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Persistence\\Clean.Persistence.csproj"
+            "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Persistence\\Clean.Persistence.csproj": {
+              "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Persistence\\Clean.Persistence.csproj"
             }
           }
         }

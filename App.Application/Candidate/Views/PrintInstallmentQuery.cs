@@ -17,7 +17,7 @@ namespace App.Application.Candidate.Views
 {
     public class PrintInstallmentQuery : IRequest<IEnumerable<PrintInstallmentModel>>
     {
-        
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string fatherName { get; set; }
     }
@@ -36,28 +36,61 @@ namespace App.Application.Candidate.Views
         }
         public async Task<IEnumerable<PrintInstallmentModel>> Handle(PrintInstallmentQuery request, CancellationToken cancellationToken)
         {
-            var query = context.view.AsQueryable();
-            if (request.FirstName != null)
+
+
+            List<PrintInstallmentModel> result = new List<PrintInstallmentModel>();
+            var query = (from i in context.Installments
+                         join c in context.Candidates on i.CandidateId equals c.Id
+                         join a in context.Addresses on c.Id equals a.CandidateId
+                         join l in context.Locations on a.PprovinceId equals l.Id
+                         select new
+                         {
+                             i.Id,
+                             i.CandidateId,
+                             c.FirstName,
+                             c.FatherName,
+                             c.GrandFatherName,
+                             a.PprovinceId,
+                             a.Cprovince,
+                             a.CdistrictId,
+                             a.Cdistrict,
+                             a.CfullAdd,
+                             c.NationalId,
+                             c.ReligionId,
+                             c.Religion.Name,
+                             c.Code
+                         }
+                ).Where(s => s.Id == request.Id).ToList();
+
+
+            //if (request.FirstName != null)
+            //{
+            //    query = query.Where(e => e.FirstName == request.FirstName);
+            //}
+            //if (request.fatherName != null)
+            //{
+            //    query = query.Where(e => e.FatherName == request.fatherName);
+            //}
+
+            foreach (var item in query)
             {
-                query = query.Where(e => e.FirstName == request.FirstName);
+                PrintInstallmentModel Installment = new PrintInstallmentModel();
+
+                Installment.FirstName = item.FirstName;
+                Installment.FatherName = item.FatherName;
+                Installment.GrandFatherName = item.GrandFatherName;
+                Installment.NationalId = item.NationalId;
+                Installment.NIDText = NationalIDReader.ConvertJSONToString(item.NationalId, "").ToString() ?? "درج نگردیده";
+                Installment.Religion = context.Religions.Where(i => i.Id == item.ReligionId).Select(s => s.Name).SingleOrDefault();
+                Installment.Province = context.Locations.Where(a => a.Id == item.PprovinceId).Select(s => s.PathDari).SingleOrDefault().ToString();
+                Installment.Destricts = context.Locations.Where(a => a.Id == item.CdistrictId).Select(s => s.PathDari).SingleOrDefault().ToString();
+                Installment.Code = item.Code;
+                Installment.Vilege = item.CfullAdd;
+                result.Add(Installment);
+
             }
-            if (request.fatherName != null)
-            {
-                query = query.Where(e => e.FatherName == request.fatherName);
-            }
-            return await query.Select(p => new PrintInstallmentModel
-            { 
-                FirstName = p.FirstName,
-                FatherName = p.FatherName,
-               GrandFatherName=p.GrandFatherName,
-               Province=p.Province,
-               Destricts=p.Destricts,
-               Vilege=p.Vilege,
-               NationalId=p.NationalId,
-                NIDText = NationalIDReader.ConvertJSONToString(p.NationalId,"").ToString() ?? "درج نگردیده",
-                Religion =p.Religion,
-               Code=p.Code
-            }).ToListAsync();
+
+            return result;
         }
     }
 }

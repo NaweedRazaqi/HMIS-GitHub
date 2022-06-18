@@ -235,3 +235,22 @@ D:\HMIS\Haj MIS\HMIS\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence
 D:\HMIS\Haj MIS\HMIS\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.dll
 D:\HMIS\Haj MIS\HMIS\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.pdb
 D:\HMIS\Haj MIS\HMIS\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.genruntimeconfig.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Persistence.deps.json
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Persistence.runtimeconfig.json
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Persistence.runtimeconfig.dev.json
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Persistence.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Persistence.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\App.Domain.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Common.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Domain.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\App.Domain.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Common.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\bin\Debug\netcoreapp3.1\Clean.Domain.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.csprojAssemblyReference.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.AssemblyInfoInputs.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.AssemblyInfo.cs
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.csproj.CoreCompileInputs.cache
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.csproj.CopyComplete
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.dll
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.pdb
+D:\HMIS-LastVer\HMIS-GitHub\Clean.Persistence\obj\Debug\netcoreapp3.1\Clean.Persistence.genruntimeconfig.cache

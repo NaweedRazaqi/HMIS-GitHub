@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jVO20xx1oT3KN/VnMaDR0yH6DxYmstLqw5AO1pe8EhLkBTvP8J7S69D5L8TvLJ9IvoPEjzHfixyciCat9UMu3g==",
+  "dgSpecHash": "o3uX+GHmJHR6XijlJPhP4BSsRXZJvUoJkfFvLhOt8VBttQxiHuw5/AxliUOFL1+BgONUSdv9IbatPlpqqi0LnA==",
   "success": true,
-  "projectFilePath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.UI\\Clean.UI.csproj",
+  "projectFilePath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.UI\\Clean.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\epplus\\5.5.2\\epplus.5.5.2.nupkg.sha512",
@@ -184,7 +184,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
   ],
   "logs": []
 }

@@ -7,7 +7,6 @@ namespace Clean.UI.ssModel
     {
         public int Id { get; set; }
         public int? Nid { get; set; }
-        public int? Evid { get; set; }
         public int? ZoneId { get; set; }
         public int? EvCreteriaId { get; set; }
         public int? ResultId { get; set; }
@@ -16,7 +15,6 @@ namespace Clean.UI.ssModel
         public DateTime? ModifiedOn { get; set; }
         public string ModifiedBy { get; set; }
 
-        public virtual Evcategory Ev { get; set; }
         public virtual EvCreteria EvCreteria { get; set; }
         public virtual Candidate N { get; set; }
         public virtual Marks Result { get; set; }

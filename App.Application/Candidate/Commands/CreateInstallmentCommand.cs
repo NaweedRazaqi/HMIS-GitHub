@@ -1,6 +1,8 @@
 ﻿using App.Application.Candidate.Models;
 using App.Application.Candidate.Queries;
 using App.Persistence.Context;
+using Clean.Common.Dates;
+using Clean.Common.Exceptions;
 using Clean.Persistence.Services;
 using MediatR;
 using System;
@@ -49,6 +51,36 @@ namespace App.Application.Candidate.Commands
         }
         public async Task<List<SearchInstallmentModel>> Handle(CreateInstallmentCommand request, CancellationToken cancellationToken)
         {
+
+            string currentdate = PersianDate.GetFormatedString(DateTime.Now).Substring(14, 4);
+
+            var yearlist = context.Years.Where(y => y.Name == Convert.ToInt32(currentdate)).Select(y => y.Id).SingleOrDefault();
+
+
+            var candidateAmount = context.Installments.Where(e => e.CandidateId == request.CandidateId).Sum(e => e.Amount);
+
+            var HajjFee = context.HajjYearlyFees.Where(h => h.YearId == yearlist).Select(h => h.Fee).SingleOrDefault();
+            var count = context.Installments.Where(e => e.CandidateId == request.CandidateId).Count();
+            if (count == 1)
+            {
+                var remaining = HajjFee - candidateAmount;
+
+                if (request.Amount < remaining )
+                {
+                    throw new BusinessRulesException("مقدار فسظ دوم کم است.");
+                }
+                else if (request.Amount > remaining)
+                {
+                    throw new BusinessRulesException("مقدار فسظ دوم بشتر است.");
+                }
+            }
+            else if (count >= 2)
+            {
+                throw new BusinessRulesException(" تعداد قسط ها تکمیل گردیده است!");
+            }
+
+            var HajjFeeCount = context.Installments.Where(i => i.CandidateId == request.CandidateId).Select(s => s.Amount).Single();
+
             int CurrentUserId = await currentUser.GetUserId();
             var Installment = request.Id != 0 ? context.Installments.Where(e => e.Id == request.Id).Single() : new Domain.Entity.prf.Installment();
             IEnumerable<SearchInstallmentModel> result = new List<SearchInstallmentModel>();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ntyyPVsMQX2X07jIcooNR9oXx7kiH9i7MN91Eq5t8EEM1ylGU2Cp/J1P3bXFJqs7NjJwhXldhrR3Xn3yy55tgw==",
+  "dgSpecHash": "OGbaHTI1jIAMLqLLWamdy1E/9Wo2C4cwSmNAGSWw+K/0toX6WKYbyaHAwchERnI8wW8RNfCHBT5E8D/BGvtuBQ==",
   "success": true,
-  "projectFilePath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Domain\\App.Domain.csproj",
+  "projectFilePath": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Domain\\App.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",

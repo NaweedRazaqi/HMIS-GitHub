@@ -6177,11 +6177,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HMIS\\Haj MIS\\HMIS\\App.Persistence\\App.Persistence.csproj",
+      "projectUniqueName": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Persistence\\App.Persistence.csproj",
       "projectName": "App.Persistence",
-      "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Persistence\\App.Persistence.csproj",
+      "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Persistence\\App.Persistence.csproj",
       "packagesPath": "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\",
-      "outputPath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Persistence\\obj\\",
+      "outputPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6201,14 +6201,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\HMIS\\Haj MIS\\HMIS\\App.Domain\\App.Domain.csproj": {
-              "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Domain\\App.Domain.csproj"
+            "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Domain\\App.Domain.csproj": {
+              "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Domain\\App.Domain.csproj"
             },
-            "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj": {
-              "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj"
+            "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\Clean.Domain.csproj": {
+              "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\Clean.Domain.csproj"
             },
-            "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Persistence\\Clean.Persistence.csproj": {
-              "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Persistence\\Clean.Persistence.csproj"
+            "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Persistence\\Clean.Persistence.csproj": {
+              "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Persistence\\Clean.Persistence.csproj"
             }
           }
         }

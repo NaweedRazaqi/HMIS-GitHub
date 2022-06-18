@@ -441,11 +441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HMIS\\Haj MIS\\HMIS\\App.Domain\\App.Domain.csproj",
+      "projectUniqueName": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Domain\\App.Domain.csproj",
       "projectName": "App.Domain",
-      "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Domain\\App.Domain.csproj",
+      "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Domain\\App.Domain.csproj",
       "packagesPath": "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\",
-      "outputPath": "D:\\HMIS\\Haj MIS\\HMIS\\App.Domain\\obj\\",
+      "outputPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\App.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -465,8 +465,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj": {
-              "projectPath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj"
+            "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\Clean.Domain.csproj": {
+              "projectPath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\Clean.Domain.csproj"
             }
           }
         }

@@ -86,7 +86,7 @@ namespace App.Application.Candidate.Queries
                 BirthDate = p.BirthDate,
                 age = (Convert.ToInt32( DateTime.Now.Year) -Convert.ToInt32 (p.BirthDate.Year)).ToString() + " ساله  " ,
                 ReligionId = p.ReligionId,
-                EnrollmentDate =PersianDate.GetFormatedString(p.CreatedOn),
+                EnrollmentDate = PersianDate.GetFormatedString(p.CreatedOn),
                 BloodGroupId = p.BloodGroupId,
                 IsInGroup = p.IsInGroup,
                 //SpecialEntityId = p.SpecialEntityId,

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+OYKzWYYBqUVLBjp3t+JzE32urV4N5WrWZsJF2wBMz6MSGmUeD1a/3GiIh9+Hf1mwYgVpt5XhO0fsqRhQ5COJQ==",
+  "dgSpecHash": "iIl4nnj4XKP9D9EVj3sC6/QCNUOAmdKxOTYfF9y0fnw/9Hq8+B62fuu/8D8Okr0WBMMgNaRJWoe3c4/f+9K7RQ==",
   "success": true,
-  "projectFilePath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Domain\\Clean.Domain.csproj",
+  "projectFilePath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Domain\\Clean.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\syncfusion.ej2.aspnet.core\\19.1.0.58\\syncfusion.ej2.aspnet.core.19.1.0.58.nupkg.sha512",

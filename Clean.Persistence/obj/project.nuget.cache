@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "omnXBHNmynby0EggaKXpnuAkXaJMZfGXZhzMbjI3fnCvqQ8II2er+voa7yxNWRXIWAZNz7UmyU5Ps8om1Zjgvg==",
+  "dgSpecHash": "DefaoDfTP8Oy4uDHTf4j2yzWl9ETvEIgEKJVPPJ6G2XdQRhynlR98XnQj6rfJdQ1i+n/Tv0TeZws5S36sjMvsA==",
   "success": true,
-  "projectFilePath": "D:\\HMIS\\Haj MIS\\HMIS\\Clean.Persistence\\Clean.Persistence.csproj",
+  "projectFilePath": "D:\\HMIS-LastVer\\HMIS-GitHub\\Clean.Persistence\\Clean.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\Naweed Ahmad\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
