@@ -52,7 +52,7 @@ namespace App.Application.Candidate.Commands
         public async Task<List<SearchInstallmentModel>> Handle(CreateInstallmentCommand request, CancellationToken cancellationToken)
         {
 
-            string currentdate = PersianDate.GetFormatedString(DateTime.Now).Substring(14, 4);
+            string currentdate = PersianDate.GetFormatedString(request.Date).Substring(15, 4);
 
             var yearlist = context.Years.Where(y => y.Name == Convert.ToInt32(currentdate)).Select(y => y.Id).SingleOrDefault();
 
