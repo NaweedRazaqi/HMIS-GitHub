@@ -71,7 +71,7 @@ namespace App.Application.Candidate.Commands
                 }
                 else if (request.Amount > remaining)
                 {
-                    throw new BusinessRulesException("مقدار فسظ دوم بشتر است.");
+                    throw new BusinessRulesException("مقدار پول از مقدار تعیین برای سال جاری بیشتر است.");
                 }
             }
             else if (count >= 2)
